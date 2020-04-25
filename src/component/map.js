@@ -2,17 +2,34 @@
 import React , { Component } from "react";
 import { Col, Row } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
-
+import './map.css'
 
 class MapContent extends Component {
 		
 	componentDidMount= () => {
     var container = document.getElementById('myMap'); //지도를 담을 영역의 DOM 레퍼런스
     var options = { //지도를 생성할 때 필요한 기본 옵션
-        center: new kakao.maps.LatLng(35.157588, 129.058822), //지도의 중심좌표.
-        level: 4 //지도의 레벨(확대, 축소 정도)
-    };
-    this.map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+        center: new kakao.maps.LatLng(37.552258, 126.993913), //지도의 중심좌표.
+        level: 9 //지도의 레벨(확대, 축소 정도)
+		};
+		this.map = new kakao.maps.Map(container, options);
+		// 마커를 생성합니다
+		var marker = new kakao.maps.Marker({
+				position: new kakao.maps.LatLng(37.658864, 127.058126)
+		});
+		marker.setMap(this.map);
+		marker = new kakao.maps.Marker({
+				position: new kakao.maps.LatLng(37.507871,127.067447)
+		});
+		marker.setMap(this.map);
+		marker = new kakao.maps.Marker({
+				position: new kakao.maps.LatLng(37.550586,126.821337) 
+		});
+		marker.setMap(this.map);
+		marker = new kakao.maps.Marker({
+				position: new kakao.maps.LatLng(37.581227, 126.881529)
+		});
+			marker.setMap(this.map); //지도 생성 및 객체 리턴
   }
 
 dobong = () => {
@@ -119,12 +136,13 @@ gangseo = () => {
         return (
 					<div>
 					<Row>
+						
 					<Col xs={5} md={2}>
-					
-					<Button onClick={this.dobong} variant="primary">도봉</Button>{' '}
-					<Button onClick={this.gangnam} variant="secondary">강남</Button>{' '}
-					<Button onClick={this.seobu} variant="success">서부</Button>{' '}
-					<Button onClick={this.gangseo} variant="warning">강서</Button>{' '}
+					<h2>서울</h2>
+					<Button className="btn"	onClick={this.dobong} variant="secondary">도봉</Button>{' '}
+					<Button className="btn"	onClick={this.gangnam} variant="secondary">강남</Button>{' '}
+					<Button className="btn"	onClick={this.seobu} variant="secondary">서부</Button>{' '}
+					<Button className="btn"	onClick={this.gangseo} variant="secondary">강서</Button>{' '}
 				</Col>
 				<Col xs={5} md={10}>
            <div id='myMap' style={{width:'300px'},{height:'500px'}}></div>
