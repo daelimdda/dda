@@ -13,7 +13,7 @@ function menubar() {
           width="30"
           height="30"
           className="d-inline-block align-top"
-          alt="React Bootstrap logo"
+          
         />운면따
   </Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
