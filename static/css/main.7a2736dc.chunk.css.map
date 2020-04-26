@@ -1,1 +1,0 @@
-{"version":3,"sources":["App.css","map.css"],"names":[],"mappings":"AAAA,KAEE,YACF,CCHA,UDCE,iBCEF,CAHA,KACE,UAEF","file":"main.7a2736dc.chunk.css","sourcesContent":[".App {\r\n  text-align: center;\r\n  padding: 30px;\r\n}\r\n",".btn {\r\n  margin: 3px;\r\n  text-align: center;\r\n}\r\nh2{\r\n  font:\r\n}"]}
