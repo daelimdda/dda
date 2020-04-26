@@ -9,7 +9,7 @@ function menubar() {
   <Navbar bg="light" expand="lg">
   <Navbar.Brand href="#home">
         <img
-          src="./logo192.png"
+          
           width="30"
           height="30"
           className="d-inline-block align-top"

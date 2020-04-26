@@ -5,8 +5,8 @@ import Navbar from './component/navbar';
 import Carddda from './component/card';
 import Bottomdda from './component/bottom';
 import { Row } from 'react-bootstrap';
-
 import { Container } from 'react-bootstrap';
+
 
 class App extends Component {
   render(){
