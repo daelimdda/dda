@@ -6,7 +6,7 @@ import './navbar.css';
 
 function menubar() {
   return (
-  <Navbar bg="dark" expand="lg">
+  <Navbar bg="light" expand="lg">
   <Navbar.Brand href="#home">
         <img
           
