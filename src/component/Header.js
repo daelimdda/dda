@@ -13,17 +13,17 @@ const Header = () => {
     return (
         <div> 
            <div className="logo">
-            <a href={'/'}>운면따</a> 
+            <a href={'/dda'}>운면따</a> 
            </div>
            <div className="login">
-            <Button variant="dark" href="login">로그인</Button>
-            <Button variant="dark" href="singup">회원가입</Button>
+            <Button variant="dark" href="/dda/login">로그인</Button>
+            <Button variant="dark" href="/dda/singup">회원가입</Button>
            </div>
            <div className="menu">
-            <MenuItem to={'/'}>홈</MenuItem>
-            <MenuItem to={'quiz'}>문제풀기</MenuItem>
-            <MenuItem to={'road'}>도로주행</MenuItem>
-            <MenuItem to={'board'}>게시판</MenuItem>               
+            <MenuItem to={'/dda'}>홈</MenuItem>
+            <MenuItem to={'/dda/quiz'}>문제풀기</MenuItem>
+            <MenuItem to={'/dda/road'}>도로주행</MenuItem>
+            <MenuItem to={'/dda/board'}>게시판</MenuItem>               
            </div>
         </div>
     );

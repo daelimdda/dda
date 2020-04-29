@@ -1,23 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, IndexRoute, browserHistory } from '@version/react-router-v3';
+import { Redirect } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import Quiz from './component/quiz';
 import Road from './component/road';
 import home from './component/home';
 import Board from './component/board';
+import NotFound from './component/notfound';
 
 ReactDOM.render(
+  
   <Router history={browserHistory}>
-  <Route path="/" component={App}>
+    <Route path="/"  component={App}>
     <IndexRoute component={home}/>
-    <Route path="quiz" component={Quiz}/>
-    <Route path="road" component={Road}/>
-    <Route path="board" component={Board}/>
+    </Route>
+  <Route path="/dda"  component={App}>
+    <IndexRoute component={home}/>
+    <Route path="/dda/quiz" component={Quiz}/>
+    <Route path="/dda/road" component={Road}/>
+    <Route path="/dda/board" component={Board}/>
   </Route>
+  <Route component={NotFound} />
 </Router>,
-
   document.getElementById('root')
 );
 

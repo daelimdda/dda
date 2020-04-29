@@ -1,8 +1,9 @@
 {
-  "homepage": "https://daelimdda.github.io/dda",
+  "homepage": "https://daelimdda.github.io/dda/",
   "name": "dda",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
