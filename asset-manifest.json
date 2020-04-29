@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/dda/static/css/main.5c0888aa.chunk.css",
-    "main.js": "/dda/static/js/main.5db682e0.chunk.js",
-    "main.js.map": "/dda/static/js/main.5db682e0.chunk.js.map",
+    "main.css": "/dda/static/css/main.b8e4aed2.chunk.css",
+    "main.js": "/dda/static/js/main.79e8b8a2.chunk.js",
+    "main.js.map": "/dda/static/js/main.79e8b8a2.chunk.js.map",
     "runtime-main.js": "/dda/static/js/runtime-main.544ccc37.js",
     "runtime-main.js.map": "/dda/static/js/runtime-main.544ccc37.js.map",
     "static/css/2.69121389.chunk.css": "/dda/static/css/2.69121389.chunk.css",
-    "static/js/2.0e0f9683.chunk.js": "/dda/static/js/2.0e0f9683.chunk.js",
-    "static/js/2.0e0f9683.chunk.js.map": "/dda/static/js/2.0e0f9683.chunk.js.map",
+    "static/js/2.6257c059.chunk.js": "/dda/static/js/2.6257c059.chunk.js",
+    "static/js/2.6257c059.chunk.js.map": "/dda/static/js/2.6257c059.chunk.js.map",
     "index.html": "/dda/index.html",
-    "precache-manifest.dc47579ce58aa7754cf39501a4feae1c.js": "/dda/precache-manifest.dc47579ce58aa7754cf39501a4feae1c.js",
+    "precache-manifest.8a8afaa23791c64c2ee23f7f2d6129c0.js": "/dda/precache-manifest.8a8afaa23791c64c2ee23f7f2d6129c0.js",
     "service-worker.js": "/dda/service-worker.js",
     "static/css/2.69121389.chunk.css.map": "/dda/static/css/2.69121389.chunk.css.map",
-    "static/css/main.5c0888aa.chunk.css.map": "/dda/static/css/main.5c0888aa.chunk.css.map",
-    "static/js/2.0e0f9683.chunk.js.LICENSE.txt": "/dda/static/js/2.0e0f9683.chunk.js.LICENSE.txt"
+    "static/css/main.b8e4aed2.chunk.css.map": "/dda/static/css/main.b8e4aed2.chunk.css.map",
+    "static/js/2.6257c059.chunk.js.LICENSE.txt": "/dda/static/js/2.6257c059.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.544ccc37.js",
     "static/css/2.69121389.chunk.css",
-    "static/js/2.0e0f9683.chunk.js",
-    "static/css/main.5c0888aa.chunk.css",
-    "static/js/main.5db682e0.chunk.js"
+    "static/js/2.6257c059.chunk.js",
+    "static/css/main.b8e4aed2.chunk.css",
+    "static/js/main.79e8b8a2.chunk.js"
   ]
 }
