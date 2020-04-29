@@ -13,6 +13,7 @@ class App extends Component {
     username:""
   }
   componentDidMount() {
+    
     fetch('http://localhost:3001/api')
         .then(res=>res.json())
         .then(data=>this.setState({username:data.username}));
