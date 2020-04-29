@@ -21,9 +21,9 @@ const Header = () => {
            </div>
            <div className="menu">
             <MenuItem to={'/'}>홈</MenuItem>
-            <MenuItem to={'/quiz'}>문제풀기</MenuItem>
-            <MenuItem to={'/road'}>도로주행</MenuItem>
-            <MenuItem to={'/board'}>게시판</MenuItem>               
+            <MenuItem to={'quiz'}>문제풀기</MenuItem>
+            <MenuItem to={'road'}>도로주행</MenuItem>
+            <MenuItem to={'board'}>게시판</MenuItem>               
            </div>
         </div>
     );
