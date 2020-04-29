@@ -5,7 +5,7 @@ import { Button } from 'react-bootstrap';
 class carddda extends Component{
   render(){
   return (
-    <Card style={{ width: '17rem'}}>
+    <Card style={{width:'17rem', height: '20rem', margin:'5px'}}>
   <Card.Img variant="top" src="holder.js/100px180" />
   <Card.Body>
     <Card.Title>{this.props.title}</Card.Title>

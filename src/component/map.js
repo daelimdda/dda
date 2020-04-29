@@ -142,8 +142,8 @@ seobu = () => {
 							<Button className="btn"	onClick={this.seobu} variant="secondary">서부</Button>{' '}
 							<Button className="btn"	onClick={this.gangseo} variant="secondary">강서</Button>{' '}
 						</Col>
-						<Col xs={5} md={10}>
-          		<div id='myMap' style={{width:'300px'},{height:'500px'}}></div>
+						<Col style={{padding:'0px'}} xs={5} md={10}>
+          		<div id='myMap' style={{ height:'500px'}}></div>
 						</Col>
 					</Row>
 					</div>

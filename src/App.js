@@ -23,15 +23,15 @@ class App extends Component {
     <div>
       {this.state.username}
      <Navbar />
-     <Container className="App">
+     <Container bg="white" className="App">
       <Row>
         <Carddda title='문제풀기' desc='필기시험'/>    
-        <Carddda title='도로주행 연습' desc='공터와 도로주행 코스 소개'/>    
-        <Carddda title='강사/회원 게시판' />
-        <Carddda title='시험신청'/>
+        <Carddda title='도로주행 연습' desc='공터와 도로주행코스 소개'/>    
+        <Carddda title='강사/회원 게시판' desc='강사모집와 회원모집' />
+        <Carddda title='시험신청' desc='운전면허시험 신청'/>
       </Row>
      </Container>
-     <Bottomdda />
+     <Bottomdda bg="white"/>
     </div>
   );
 }
