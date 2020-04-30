@@ -1,7 +1,7 @@
 import React from 'react';
 import BigText from './BigText';
 
-const About = () => {
+const Quiz = () => {
     return (
         <div>
            <BigText>문제페이지</BigText>
@@ -9,4 +9,4 @@ const About = () => {
     );
 };
 
-export default About;
+export default Quiz;

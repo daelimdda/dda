@@ -28,8 +28,18 @@
   font-size: 1rem;
 }
 a{
-  color: rgb(0, 0, 0);
-  
+  color:black;
+}
+a:hover{
+  color:gray;
+  text-decoration:none;
+}
+.url{
+  color: rgba(30, 22, 54, 0.6);
+}
+.url:hover{
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration:none;
 }
 .menu-item {
   display: inline-block;

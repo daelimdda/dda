@@ -1,7 +1,7 @@
 import React from 'react';
 import BigText from './BigText';
 
-const Posts = () => {
+const Road = () => {
     return (
         <div>
             <BigText>도로주행페이지</BigText>
@@ -9,4 +9,4 @@ const Posts = () => {
     );
 };
 
-export default Posts;
+export default Road;

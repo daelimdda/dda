@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, IndexRoute, browserHistory } from '@version/react-router-v3';
-import { Redirect } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import Quiz from './component/quiz';
