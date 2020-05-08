@@ -11,8 +11,8 @@
 .btn1 {
   padding: 10px 20px;
   border-radius: 10px;
-	color: rgba(30, 22, 54, 0.6);
-	box-shadow: rgba(30, 22, 54, 0.4) 0 0px 0px 2px inset;
+	color: #35acf6;
+	box-shadow: #35acf6 0 0px 0px 1px inset;
 }
 
 .btn1:hover {
@@ -20,8 +20,8 @@
 	box-shadow: rgba(30, 22, 54, 0.7) 0 0px 0px 40px inset;
 }
 .menu {
-  background-color:gray;
-  height: 3.5rem;
+  background-color:#35acf6;
+  height: 2.5rem;
 }
 .login{
   text-align: right;
@@ -35,7 +35,7 @@ a:hover{
   text-decoration:none;
 }
 .url{
-  color: rgba(30, 22, 54, 0.6);
+  color: #35acf6;
 }
 .url:hover{
   color: rgba(255, 255, 255, 0.85);
@@ -45,11 +45,11 @@ a:hover{
   display: inline-block;
   color: white;
   font-size: 1.5rem;
-  line-height: 3.5rem;
+  line-height: 2.5rem;
   width: 25%;
   text-align: center;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.4s;
   text-decoration: none;
 }
 

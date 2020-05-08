@@ -14,7 +14,7 @@ class MapContent extends Component {
 		this.map = new kakao.maps.Map(container, options);
 		// 마커를 생성합니다
 		var marker = new kakao.maps.Marker({
-				position: new kakao.maps.LatLng(37.658864, 127.058126)
+			position: new kakao.maps.LatLng(37.658864, 127.058126)
 		});
 		marker.setMap(this.map);
 		marker = new kakao.maps.Marker({
