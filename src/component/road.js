@@ -16,7 +16,7 @@ class Road extends Component {
     render(){
     return (
             <div id="roadmap">
-            <div id="roadview" style={{ width:'100%' ,height:'28em'}}></div>
+            <div id="roadview" style={{ width:'100%' ,height:'85vh'}}></div>
             </div>
         
     )}
