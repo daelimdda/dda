@@ -2,7 +2,7 @@ body{
     background-color: #f5f6f7;
   }
   #wrap{
-    font-family: Dotum,sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-top:50px;
   }
   #header, #content, #btn_login{
