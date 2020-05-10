@@ -135,15 +135,45 @@ seobu = () => {
         return (
 					<div>
 					<Row>
-						<Col xs={5} md={2}>
-							<h2>서울</h2>
-							<Button className="btn"	onClick={this.dobong} variant="secondary">도봉</Button>{' '}
-							<Button className="btn"	onClick={this.gangnam} variant="secondary">강남</Button>{' '}
-							<Button className="btn"	onClick={this.seobu} variant="secondary">서부</Button>{' '}
-							<Button className="btn"	onClick={this.gangseo} variant="secondary">강서</Button>{' '}
+						<Col xs={5} md={5} style={{ paddingLeft:200 , paddingRight: 0 }}>
+							<h3>서울</h3>
+							<Button className="btn"	onClick={this.dobong} variant="secondary">도봉</Button>
+							<Button className="btn"	onClick={this.gangnam} variant="secondary">강남</Button>
+							<Button className="btn"	onClick={this.seobu} variant="secondary">서부</Button>
+							<Button className="btn"	onClick={this.gangseo} variant="secondary">강서</Button>
+							<h3>경기(미완성)</h3>
+							<Button className="btn"	onClick={this.dobong} variant="secondary">도봉</Button>
+							<Button className="btn"	onClick={this.gangnam} variant="secondary">강남</Button>
+							<Button className="btn"	onClick={this.seobu} variant="secondary">서부</Button>
+							<Button className="btn"	onClick={this.gangseo} variant="secondary">강서</Button>
+							<h3>강원(미완성)</h3>
+							<Button className="btn"	onClick={this.dobong} variant="secondary">도봉</Button>
+							<Button className="btn"	onClick={this.gangnam} variant="secondary">강남</Button>
+							<Button className="btn"	onClick={this.seobu} variant="secondary">서부</Button>
+							<Button className="btn"	onClick={this.gangseo} variant="secondary">강서</Button>
+							<h3>충청(미완성)</h3>
+							<Button className="btn"	onClick={this.dobong} variant="secondary">도봉</Button>
+							<Button className="btn"	onClick={this.gangnam} variant="secondary">강남</Button>
+							<Button className="btn"	onClick={this.seobu} variant="secondary">서부</Button>
+							<Button className="btn"	onClick={this.gangseo} variant="secondary">강서</Button>
+							<h3>전라(미완성)</h3>
+							<Button className="btn"	onClick={this.dobong} variant="secondary">도봉</Button>
+							<Button className="btn"	onClick={this.gangnam} variant="secondary">강남</Button>
+							<Button className="btn"	onClick={this.seobu} variant="secondary">서부</Button>
+							<Button className="btn"	onClick={this.gangseo} variant="secondary">강서</Button>
+							<h3>경상(미완성)</h3>
+							<Button className="btn"	onClick={this.dobong} variant="secondary">도봉</Button>
+							<Button className="btn"	onClick={this.gangnam} variant="secondary">강남</Button>
+							<Button className="btn"	onClick={this.seobu} variant="secondary">서부</Button>
+							<Button className="btn"	onClick={this.gangseo} variant="secondary">강서</Button>
+							<h3>제주(미완성)</h3>
+							<Button className="btn"	onClick={this.dobong} variant="secondary">도봉</Button>
+							<Button className="btn"	onClick={this.gangnam} variant="secondary">강남</Button>
+							<Button className="btn"	onClick={this.seobu} variant="secondary">서부</Button>
+							<Button className="btn"	onClick={this.gangseo} variant="secondary">강서</Button>
 						</Col>
-						<Col style={{padding:'0px'}} xs={5} md={10}>
-          		<div id='myMap' style={{ height:'500px'}}></div>
+						<Col xs={5} md={5} style={{ paddingLeft:0 , paddingRight: 0 }}>
+          		<div id='myMap' style={{ height:'60vh' , width:'70vh'}}></div>
 						</Col>
 					</Row>
 					</div>

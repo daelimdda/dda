@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card } from 'react-bootstrap';
+import { Card ,CardGroup} from 'react-bootstrap';
 import { Link } from '@version/react-router-v3';
 import './Header.css';
 
@@ -13,8 +13,9 @@ class carddda extends Component{
 
   render(){
   return (
-    <Card style={{width:'17rem', height: '20rem', margin:'5px'}}>
-        <Card.Img  src="123" />
+    <CardGroup>
+    <Card border= "info" style={{width:'25rem', height: '26rem', margin:'20px'}}>
+        <Card.Img  src={this.props.ddasrc} />
       <Card.Body>
         <Card.Title>{this.props.title}</Card.Title>
       <Card.Text>
@@ -23,6 +24,7 @@ class carddda extends Component{
         <a className="url" href={this.props.url}><this.MenuItem to={this.props.link}>바로가기</this.MenuItem></a>
       </Card.Body>
     </Card>
+    </CardGroup>
   );
 }}
 
