@@ -16,14 +16,16 @@ class carddda extends Component{
   return (
     <CardGroup >
     <Card className="bg-transparent">
-      <a href={this.props.link}>
+      <this.MenuItem to={this.props.link}>
+      <a href={this.props.url}>
         <div className="imgdiv bg-white">
         <img className="img" src={this.props.ddasrc} />
         </div>
       <Card.Body>
-  <Card.Title className="text-white text-center">{this.props.title}</Card.Title>
+        <Card.Title className="text-white text-center">{this.props.title}</Card.Title>
       </Card.Body>
       </a>
+      </this.MenuItem>
     </Card>
     </CardGroup>
   );

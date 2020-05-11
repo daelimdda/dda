@@ -1,3 +1,6 @@
 .App {
-background-color: #35acf6;
+background-color: #5dbdf8f6;
+}
+.home{
+  background-image: url(./image/street.jpg);
 }

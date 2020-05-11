@@ -136,7 +136,7 @@ seobu = () => {
 					<div>
 					<Container className="map">
 					<Row>
-						<Col className="korea1" md={6} style={{padding:"0px 0px 0px 0px"}}>
+						<Col className="korea1" xs={12} md={4} style={{padding:"0px 0px 0px 0px"}}>
 							<div className="testarea"><h1>전국 시험장 안내</h1></div>
 							<div className="korea">
 							<h4>서울</h4>
@@ -176,8 +176,8 @@ seobu = () => {
 							<Button className="btn"	size="sm" onClick={this.gangseo} variant="secondary">강서</Button>
 							</div>
 							</Col>
-							<Col md={6} style={{padding:"0px 0px 0px 0px"}}>
-          		<div id='myMap' style={{ height:'100%' , width:'100%'}}></div>
+							<Col xs={12} md={8} style={{padding:"0px 0px 0px 0px"}}>
+          		<div id='myMap' style={{ height:'70vh' , width:'100%'}}></div>
 						</Col>
 					</Row>
 					</Container>

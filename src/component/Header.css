@@ -1,33 +1,23 @@
 .logo {
   height: 3rem;
-  background-color:white;
+  background-color: white;
   width: 100vw;
   line-height: 0.5rem;
   color: black;
   font-size: 5rem;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 20px;
+  padding-bottom: 70px;
 
 }
-.btn1 {
-  padding: 10px 20px;
-  border-radius: 10px;
-	color: #35acf6;
-	box-shadow: #35acf6 0 0px 0px 1px inset;
-}
 
-.btn1:hover {
-	color: rgba(255, 255, 255, 0.85);
-	box-shadow: rgba(30, 22, 54, 0.7) 0 0px 0px 40px inset;
-}
 .menu {
   background-color:#35acf6;
   height: 3rem;
 }
 .login{
   text-align: right;
-  
+  background-color: white;
 }
 
 a{
@@ -57,24 +47,4 @@ a:hover{
   text-align: center;
   width: 150px;
   height: 150px;
-}
-.menu-item {
-  display: inline-block;
-  color: white;
-  font-size: 1.5rem;
-  line-height: 3rem;
-  width: 25%;
-  text-align: center;
-  cursor: pointer;
-  transition: background-color 0.4s;
-  text-decoration: none;
-}
-
-.menu-item:hover {
-  color:blanchedalmond;
-  background-color: black;
-}
-
-.menu-item:active, .menu-item.active {
-  background-color: gray;
 }

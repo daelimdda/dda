@@ -1,13 +1,15 @@
 .btn {
   margin: 2px;
   text-align: center;
+  border-radius: 5px;
 }
 
 .korea{
-  margin: 40px 10px 10px 10px;
+  border-radius: 20px;
+  margin: 20px 10px 10px 10px;
   padding: 10px 10px 10px 10px;
   color: white;
-  background-color :darkgray;
+  background-color :rgb(169, 169, 169);
   border: black solid 3px;
 }
 Col{
@@ -15,12 +17,13 @@ Col{
   margin: 0px 0px 0px 0px;
 }
 .korea1{
-  
+
   color: white;
-  background-color: gray;
+  background-color: rgba(128, 128, 128, 0.61);
   border: black solid 3px;
 }
 .testarea{
   margin-top: 1.5rem;
   text-align: center;
+  border-radius: 10px;
 }
