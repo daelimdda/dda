@@ -14,6 +14,7 @@ class carddda extends Component{
 
   render(){
   return (
+   
     <CardGroup >
     <Card className="bg-transparent">
       <this.MenuItem to={this.props.link}>
@@ -28,6 +29,7 @@ class carddda extends Component{
       </this.MenuItem>
     </Card>
     </CardGroup>
+
   );
 }}
 

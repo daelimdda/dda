@@ -16,11 +16,13 @@ class home extends Component {
   render(){
   return (
     
-  <div className="main">
+  <div >
    <img className="home" src={street}/>
+    
      <Container bg="white" className="App">
+     <div className="main">
       <Row >
-        <Col xs={3} md={3}>
+        <Col xs={3} md={3} >
         <Carddda title="필기 문제풀기" ddasrc={exam} link="/dda/quiz"/>    
         </Col >
         <Col xs={3} md={3}>
@@ -33,10 +35,12 @@ class home extends Component {
         <Carddda title="시험신청" ddasrc={app} url="https://www.safedriving.or.kr/"/>
         </Col>
       </Row>
-     </Container>
+    </div>
      <MB />
      <Bottomdda />
-  </div>  
+     </Container>
+  </div>
+   
   );
 }
 }

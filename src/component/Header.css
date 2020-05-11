@@ -38,13 +38,21 @@ a:hover{
 .bg-transparent{
   border: transparent;
 }
-.imgdiv{
-  margin-top: 1rem;
+.carddda{
   text-align: center;
-  border-radius: 100px;
+}
+.imgdiv{
+  margin: 50px 50px 0px 50px;
+  text-align: center;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
 }
 .img{
   text-align: center;
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
+  border-radius: 10%;
+  
 }
