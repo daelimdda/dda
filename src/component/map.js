@@ -1,6 +1,6 @@
 /*global kakao*/
 import React , { Component } from "react";
-import { Col, Row } from 'react-bootstrap';
+import {Container , Col, Row } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
 import './map.css';
 
@@ -134,51 +134,55 @@ seobu = () => {
     render() {
         return (
 					<div>
+					<Container className="map">
 					<Row>
-						<Col xs={5} md={5} style={{ paddingLeft:200 , paddingRight: 0 }}>
-							<h3>서울</h3>
-							<Button className="btn"	onClick={this.dobong} variant="secondary">도봉</Button>
-							<Button className="btn"	onClick={this.gangnam} variant="secondary">강남</Button>
-							<Button className="btn"	onClick={this.seobu} variant="secondary">서부</Button>
-							<Button className="btn"	onClick={this.gangseo} variant="secondary">강서</Button>
-							<h3>경기(미완성)</h3>
-							<Button className="btn"	onClick={this.dobong} variant="secondary">도봉</Button>
-							<Button className="btn"	onClick={this.gangnam} variant="secondary">강남</Button>
-							<Button className="btn"	onClick={this.seobu} variant="secondary">서부</Button>
-							<Button className="btn"	onClick={this.gangseo} variant="secondary">강서</Button>
-							<h3>강원(미완성)</h3>
-							<Button className="btn"	onClick={this.dobong} variant="secondary">도봉</Button>
-							<Button className="btn"	onClick={this.gangnam} variant="secondary">강남</Button>
-							<Button className="btn"	onClick={this.seobu} variant="secondary">서부</Button>
-							<Button className="btn"	onClick={this.gangseo} variant="secondary">강서</Button>
-							<h3>충청(미완성)</h3>
-							<Button className="btn"	onClick={this.dobong} variant="secondary">도봉</Button>
-							<Button className="btn"	onClick={this.gangnam} variant="secondary">강남</Button>
-							<Button className="btn"	onClick={this.seobu} variant="secondary">서부</Button>
-							<Button className="btn"	onClick={this.gangseo} variant="secondary">강서</Button>
-							<h3>전라(미완성)</h3>
-							<Button className="btn"	onClick={this.dobong} variant="secondary">도봉</Button>
-							<Button className="btn"	onClick={this.gangnam} variant="secondary">강남</Button>
-							<Button className="btn"	onClick={this.seobu} variant="secondary">서부</Button>
-							<Button className="btn"	onClick={this.gangseo} variant="secondary">강서</Button>
-							<h3>경상(미완성)</h3>
-							<Button className="btn"	onClick={this.dobong} variant="secondary">도봉</Button>
-							<Button className="btn"	onClick={this.gangnam} variant="secondary">강남</Button>
-							<Button className="btn"	onClick={this.seobu} variant="secondary">서부</Button>
-							<Button className="btn"	onClick={this.gangseo} variant="secondary">강서</Button>
-							<h3>제주(미완성)</h3>
-							<Button className="btn"	onClick={this.dobong} variant="secondary">도봉</Button>
-							<Button className="btn"	onClick={this.gangnam} variant="secondary">강남</Button>
-							<Button className="btn"	onClick={this.seobu} variant="secondary">서부</Button>
-							<Button className="btn"	onClick={this.gangseo} variant="secondary">강서</Button>
-						</Col>
-						<Col xs={5} md={5} style={{ paddingLeft:0 , paddingRight: 0 }}>
-          		<div id='myMap' style={{ height:'60vh' , width:'70vh'}}></div>
+						<Col className="korea1" md={6} style={{padding:"0px 0px 0px 0px"}}>
+							<div className="testarea"><h1>전국 시험장 안내</h1></div>
+							<div className="korea">
+							<h4>서울</h4>
+							<Button className="btn"	size="sm" onClick={this.dobong} variant="secondary">도봉</Button>
+							<Button className="btn"	size="sm" onClick={this.gangnam} variant="secondary">강남</Button>
+							<Button className="btn"	size="sm" onClick={this.seobu} variant="secondary">서부</Button>
+							<Button className="btn"	size="sm" onClick={this.gangseo} variant="secondary">강서</Button>
+							<h4>경기</h4>
+							<Button className="btn"	size="sm" onClick={this.dobong} variant="secondary">도봉</Button>
+							<Button className="btn"	size="sm" onClick={this.gangnam} variant="secondary">강남</Button>
+							<Button className="btn"	size="sm" onClick={this.seobu} variant="secondary">서부</Button>
+							<Button className="btn"	size="sm" onClick={this.gangseo} variant="secondary">강서</Button>
+							<h4>강원</h4>
+							<Button className="btn"	size="sm" onClick={this.dobong} variant="secondary">도봉</Button>
+							<Button className="btn"	size="sm" onClick={this.gangnam} variant="secondary">강남</Button>
+							<Button className="btn"	size="sm" onClick={this.seobu} variant="secondary">서부</Button>
+							<Button className="btn"	size="sm" onClick={this.gangseo} variant="secondary">강서</Button>
+							<h4>충청</h4>
+							<Button className="btn"	size="sm" onClick={this.dobong} variant="secondary">도봉</Button>
+							<Button className="btn"	size="sm" onClick={this.gangnam} variant="secondary">강남</Button>
+							<Button className="btn"	size="sm" onClick={this.seobu} variant="secondary">서부</Button>
+							<Button className="btn"	size="sm" onClick={this.gangseo} variant="secondary">강서</Button>
+							<h4>전라</h4>
+							<Button className="btn"	size="sm" onClick={this.dobong} variant="secondary">도봉</Button>
+							<Button className="btn"	size="sm" onClick={this.gangnam} variant="secondary">강남</Button>
+							<Button className="btn"	size="sm" onClick={this.seobu} variant="secondary">서부</Button>
+							<Button className="btn"	size="sm" onClick={this.gangseo} variant="secondary">강서</Button>
+							<h4>경상</h4>
+							<Button className="btn"	size="sm" onClick={this.dobong} variant="secondary">도봉</Button>
+							<Button className="btn"	size="sm" onClick={this.gangnam} variant="secondary">강남</Button>
+							<Button className="btn"	size="sm" onClick={this.seobu} variant="secondary">서부</Button>
+							<Button className="btn"	size="sm" onClick={this.gangseo} variant="secondary">강서</Button>
+							<h4>제주</h4> 
+							<Button className="btn"	size="sm" onClick={this.dobong} variant="secondary">도봉</Button>
+							<Button className="btn"	size="sm" onClick={this.gangnam} variant="secondary">강남</Button>
+							<Button className="btn"	size="sm" onClick={this.seobu} variant="secondary">서부</Button>
+							<Button className="btn"	size="sm" onClick={this.gangseo} variant="secondary">강서</Button>
+							</div>
+							</Col>
+							<Col md={6} style={{padding:"0px 0px 0px 0px"}}>
+          		<div id='myMap' style={{ height:'100%' , width:'100%'}}></div>
 						</Col>
 					</Row>
+					</Container>
 					</div>
-
-					
+										
         )
     }
 }

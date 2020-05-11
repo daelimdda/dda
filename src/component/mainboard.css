@@ -1,0 +1,17 @@
+.MB{
+  background-color: lightgrey;
+  
+}
+.name{
+  background-color: white;
+  color: black;
+  text-align: left;
+  font-size: 28pt;
+  border: black 1pt;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+}
+.mblist{
+  background-color: white;
+}

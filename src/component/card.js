@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { Card ,CardGroup} from 'react-bootstrap';
+import {Card ,CardGroup} from 'react-bootstrap';
 import { Link } from '@version/react-router-v3';
 import './Header.css';
+
 
 class carddda extends Component{
 
@@ -13,16 +14,16 @@ class carddda extends Component{
 
   render(){
   return (
-    <CardGroup>
-    <Card border= "info" style={{width:'25rem', height: '26rem', margin:'20px'}}>
-        <Card.Img  src={this.props.ddasrc} />
+    <CardGroup >
+    <Card className="bg-transparent">
+      <a href={this.props.link}>
+        <div className="imgdiv bg-white">
+        <img className="img" src={this.props.ddasrc} />
+        </div>
       <Card.Body>
-        <Card.Title>{this.props.title}</Card.Title>
-      <Card.Text>
-        {this.props.desc}
-      </Card.Text>
-        <a className="url" href={this.props.url}><this.MenuItem to={this.props.link}>바로가기</this.MenuItem></a>
+  <Card.Title className="text-white text-center">{this.props.title}</Card.Title>
       </Card.Body>
+      </a>
     </Card>
     </CardGroup>
   );

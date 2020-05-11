@@ -12,19 +12,15 @@ const MenuItem = ({active, children, to}) => (
 const Header = () => {
     return (
         <div>   
-           <div className="logo">
-            <a href={'/dda'}>운면따</a> 
-           </div>
            <div className="login">
-            <Button variant="outline-secondary" href="/dda/login.html">로그인</Button>
-            <Button variant="outline-secondary" href="/dda/signup.html">회원가입</Button>
+            <Button variant="light" href="/dda/login.html">로그인</Button>
+            <Button variant="light" href="/dda/signup.html">회원가입</Button>
+           </div> 
+           <div className="logo">
+            <a href={'/dda'}>Driver School</a> 
            </div>
-           <div className="menu">
-            <MenuItem to={'/dda'}>홈</MenuItem>
-            <MenuItem to={'/dda/quiz'}>문제풀기</MenuItem>
-            <MenuItem to={'/dda/road'}>도로주행</MenuItem>
-            <MenuItem to={'/dda/board'}>게시판</MenuItem>               
-           </div>    
+          
+
         </div>
     );
 };

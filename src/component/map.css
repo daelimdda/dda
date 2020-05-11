@@ -1,11 +1,26 @@
 .btn {
-  margin: 3px;
+  margin: 2px;
   text-align: center;
 }
-h2{
-  font:
+
+.korea{
+  margin: 40px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
+  color: white;
+  background-color :darkgray;
+  border: black solid 3px;
 }
-col{
-  padding-left: 0px;
-  padding-right: 0px;
+Col{
+  padding: 0px 0px 0px 0px ;
+  margin: 0px 0px 0px 0px;
+}
+.korea1{
+  
+  color: white;
+  background-color: gray;
+  border: black solid 3px;
+}
+.testarea{
+  margin-top: 1.5rem;
+  text-align: center;
 }

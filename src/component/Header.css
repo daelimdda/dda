@@ -1,13 +1,14 @@
 .logo {
-  height: 3.5rem;
+  height: 3rem;
   background-color:white;
   width: 100vw;
-  line-height: 3.5rem;
+  line-height: 0.5rem;
   color: black;
   font-size: 5rem;
   font-weight: bold;
   text-align: center;
-  margin-top: 20px;
+  margin-bottom: 20px;
+
 }
 .btn1 {
   padding: 10px 20px;
@@ -26,8 +27,9 @@
 }
 .login{
   text-align: right;
-  font-size: 1rem;
+  
 }
+
 a{
   
   color:black;
@@ -42,6 +44,19 @@ a:hover{
 .url:hover{
   color: rgba(255, 255, 255, 0.85);
   text-decoration:none;
+}
+.bg-transparent{
+  border: transparent;
+}
+.imgdiv{
+  margin-top: 1rem;
+  text-align: center;
+  border-radius: 100px;
+}
+.img{
+  text-align: center;
+  width: 150px;
+  height: 150px;
 }
 .menu-item {
   display: inline-block;

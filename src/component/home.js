@@ -5,44 +5,34 @@ import Carddda from './card';
 import Bottomdda from './bottom';
 import { Col,Row  } from 'react-bootstrap';
 import { Container } from 'react-bootstrap';
-import exam from '../image/exam.jpg'
-import road from '../image/driving.jpg'
-import board from '../image/board.jpg'
-import app from '../image/application.jpg'
-
+import exam from '../image/test.png'
+import road from '../image/paths.png'
+import board from '../image/notebook.png'
+import app from '../image/edit-tools.png'
+import MB from './mainboard';
 class home extends Component {
-  state={
-    username:""
-  }
-  componentDidMount() {
-    
-    fetch('http://localhost:3001/api')
-        .then(res=>res.json())
-        .then(data=>this.setState({username:data.username}));
-  } 
 
   render(){
   return (
-    <div className="div1">
+    <div>
      <Container bg="white" className="App">
-      
       <Row >
-        <Col md={3}>
-        <Carddda title='문제풀기' desc='필기시험' ddasrc={exam} link="dda/quiz"/>    
+        <Col xs={3} md={3}>
+        <Carddda title="필기 문제풀기" ddasrc={exam} link="dda/quiz"/>    
         </Col >
-        <Col md={3} >
-        <Carddda title='도로주행 연습' desc='공터와 도로주행코스 소개' ddasrc={road} link="dda/road" />
+        <Col xs={3} md={3}>
+        <Carddda title="도로주행" ddasrc={road} link="dda/road" />
         </Col>
-        <Col md={3}>    
-        <Carddda title='강사/회원 게시판' desc='강사모집와 회원모집' ddasrc={board} link="dda/board" />
+        <Col xs={3} md={3}>    
+        <Carddda title="게시판" ddasrc={board} link="dda/board" />
         </Col>
-        <Col md={3}>
-        <Carddda title='시험신청' desc='운전면허시험 신청' ddasrc={app} url="https://www.safedriving.or.kr/"/>
+        <Col xs={3} md={3}>
+        <Carddda title="시험신청" ddasrc={app} url="https://www.safedriving.or.kr/"/>
         </Col>
       </Row>
-      
      </Container>
-     <Bottomdda bg="white"/>
+     <MB />
+     <Bottomdda />
     </div>
   );
 }

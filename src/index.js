@@ -21,8 +21,8 @@ ReactDOM.render(
     <Route path="/dda/road" component={Road}/>
     <Route path="/dda/board" component={Board}/>
   </Route>
-  <Route component={NotFound} />
-</Router>,
+    <Route component={NotFound} />
+  </Router>,
   document.getElementById('root')
 );
 
