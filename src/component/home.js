@@ -10,11 +10,14 @@ import road from '../image/paths.png'
 import board from '../image/notebook.png'
 import app from '../image/edit-tools.png'
 import MB from './mainboard';
+import street from '../image/street.png'
 class home extends Component {
 
   render(){
   return (
-    <div className="home">
+    
+  <div className="main">
+   <img className="home" src={street}/>
      <Container bg="white" className="App">
       <Row >
         <Col xs={3} md={3}>
@@ -33,7 +36,7 @@ class home extends Component {
      </Container>
      <MB />
      <Bottomdda />
-    </div>
+  </div>  
   );
 }
 }
