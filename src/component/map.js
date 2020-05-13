@@ -431,6 +431,181 @@ gwangyang = () => {
 		removable : iwRemoveable
 	});
 }
+chungjoo = () => {
+	var container = document.getElementById('myMap'); //지도를 담을 영역의 DOM 레퍼런스
+	var options = { //지도를 생성할 때 필요한 기본 옵션
+			center: new kakao.maps.LatLng(36.577454, 127.567168), //지도의 중심좌표.
+			level: 5 //지도의 레벨(확대, 축소 정도
+		};
+	this.map = new kakao.maps.Map(container, options);
+	// 마커가 표시될 위치입니다 
+	var markerPosition  = new kakao.maps.LatLng(36.577454, 127.567168); 
+		
+	// 마커를 생성합니다
+	var marker = new kakao.maps.Marker({
+			position: markerPosition
+	});
+		marker.setMap(this.map);
+	var iwContent = '<div style="padding:5px;">충청북도 청주시 상당구 가덕면 교육원로 131-20</div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나documentelement가 가능합니다
+		iwPosition = new kakao.maps.LatLng(36.577454, 127.567168), //인포윈도우 표시 위치입니다
+		iwRemoveable = true; // removeable 속성을 ture 로 설정하면 인포윈도우를 닫을 수 있는 x버튼이 표시됩니다
+	var infowindow = new kakao.maps.InfoWindow({
+		map: this.map, // 인포윈도우가 표시될 지도
+		position : iwPosition, 
+		content : iwContent,
+		removable : iwRemoveable
+	});
+}
+choongjoo = () => {
+	var container = document.getElementById('myMap'); //지도를 담을 영역의 DOM 레퍼런스
+	var options = { //지도를 생성할 때 필요한 기본 옵션
+			center: new kakao.maps.LatLng(36.577454, 127.567168), //지도의 중심좌표.
+			level: 5 //지도의 레벨(확대, 축소 정도
+		};
+	this.map = new kakao.maps.Map(container, options);
+	// 마커가 표시될 위치입니다 
+	var markerPosition  = new kakao.maps.LatLng(36.577454, 127.567168); 
+		
+	// 마커를 생성합니다
+	var marker = new kakao.maps.Marker({
+			position: markerPosition
+	});
+		marker.setMap(this.map);
+	var iwContent = '<div style="padding:5px;">충청북도 청주시 상당구 가덕면 교육원로 131-20</div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나documentelement가 가능합니다
+		iwPosition = new kakao.maps.LatLng(36.577454, 127.567168), //인포윈도우 표시 위치입니다
+		iwRemoveable = true; // removeable 속성을 ture 로 설정하면 인포윈도우를 닫을 수 있는 x버튼이 표시됩니다
+	var infowindow = new kakao.maps.InfoWindow({
+		map: this.map, // 인포윈도우가 표시될 지도
+		position : iwPosition, 
+		content : iwContent,
+		removable : iwRemoveable
+	});
+}
+yesan = () => {
+	var container = document.getElementById('myMap'); //지도를 담을 영역의 DOM 레퍼런스
+	var options = { //지도를 생성할 때 필요한 기본 옵션
+			center: new kakao.maps.LatLng(36.672767, 126.788040), //지도의 중심좌표.
+			level: 5 //지도의 레벨(확대, 축소 정도
+		};
+	this.map = new kakao.maps.Map(container, options);
+	// 마커가 표시될 위치입니다 
+	var markerPosition  = new kakao.maps.LatLng(36.672767, 126.788040); 
+		
+	// 마커를 생성합니다
+	var marker = new kakao.maps.Marker({
+			position: markerPosition
+	});
+		marker.setMap(this.map);
+	var iwContent = '<div style="padding:5px;">충청남도 예산군 오가면 국사봉로 500</div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나documentelement가 가능합니다
+		iwPosition = new kakao.maps.LatLng(36.672767, 126.788040), //인포윈도우 표시 위치입니다
+		iwRemoveable = true; // removeable 속성을 ture 로 설정하면 인포윈도우를 닫을 수 있는 x버튼이 표시됩니다
+	var infowindow = new kakao.maps.InfoWindow({
+		map: this.map, // 인포윈도우가 표시될 지도
+		position : iwPosition, 
+		content : iwContent,
+		removable : iwRemoveable
+	});
+}
+moonkyung = () => {
+	var container = document.getElementById('myMap'); //지도를 담을 영역의 DOM 레퍼런스
+	var options = { //지도를 생성할 때 필요한 기본 옵션
+			center: new kakao.maps.LatLng(36.636965, 128.173571), //지도의 중심좌표.
+			level: 5 //지도의 레벨(확대, 축소 정도
+		};
+	this.map = new kakao.maps.Map(container, options);
+	// 마커가 표시될 위치입니다 
+	var markerPosition  = new kakao.maps.LatLng(36.636965, 128.173571); 
+		
+	// 마커를 생성합니다
+	var marker = new kakao.maps.Marker({
+			position: markerPosition
+	});
+		marker.setMap(this.map);
+	var iwContent = '<div style="padding:5px;">경상북도 문경시 점촌4동 신기공단1길 12</div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나documentelement가 가능합니다
+		iwPosition = new kakao.maps.LatLng(36.636965, 128.173571), //인포윈도우 표시 위치입니다
+		iwRemoveable = true; // removeable 속성을 ture 로 설정하면 인포윈도우를 닫을 수 있는 x버튼이 표시됩니다
+	var infowindow = new kakao.maps.InfoWindow({
+		map: this.map, // 인포윈도우가 표시될 지도
+		position : iwPosition, 
+		content : iwContent,
+		removable : iwRemoveable
+	});
+}
+pohang = () => {
+	var container = document.getElementById('myMap'); //지도를 담을 영역의 DOM 레퍼런스
+	var options = { //지도를 생성할 때 필요한 기본 옵션
+			center: new kakao.maps.LatLng(35.942994, 129.393691), //지도의 중심좌표.
+			level: 5 //지도의 레벨(확대, 축소 정도
+		};
+	this.map = new kakao.maps.Map(container, options);
+	// 마커가 표시될 위치입니다 
+	var markerPosition  = new kakao.maps.LatLng(35.942994, 129.393691); 
+		
+	// 마커를 생성합니다
+	var marker = new kakao.maps.Marker({
+			position: markerPosition
+	});
+		marker.setMap(this.map);
+	var iwContent = '<div style="padding:5px;">경상북도 포항시 남구 오천읍 문덕2리 1030-6</div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나documentelement가 가능합니다
+		iwPosition = new kakao.maps.LatLng(35.942994, 129.393691), //인포윈도우 표시 위치입니다
+		iwRemoveable = true; // removeable 속성을 ture 로 설정하면 인포윈도우를 닫을 수 있는 x버튼이 표시됩니다
+	var infowindow = new kakao.maps.InfoWindow({
+		map: this.map, // 인포윈도우가 표시될 지도
+		position : iwPosition, 
+		content : iwContent,
+		removable : iwRemoveable
+	});
+}
+masan = () => {
+	var container = document.getElementById('myMap'); //지도를 담을 영역의 DOM 레퍼런스
+	var options = { //지도를 생성할 때 필요한 기본 옵션
+			center: new kakao.maps.LatLng(35.124560, 128.487561), //지도의 중심좌표.
+			level: 5 //지도의 레벨(확대, 축소 정도
+		};
+	this.map = new kakao.maps.Map(container, options);
+	// 마커가 표시될 위치입니다 
+	var markerPosition  = new kakao.maps.LatLng(35.124560, 128.487561); 
+		
+	// 마커를 생성합니다
+	var marker = new kakao.maps.Marker({
+			position: markerPosition
+	});
+		marker.setMap(this.map);
+	var iwContent = '<div style="padding:5px;">경상남도 창원시 마산회원구 진동면 진북산업로 90-1</div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나documentelement가 가능합니다
+		iwPosition = new kakao.maps.LatLng(35.124560, 128.487561), //인포윈도우 표시 위치입니다
+		iwRemoveable = true; // removeable 속성을 ture 로 설정하면 인포윈도우를 닫을 수 있는 x버튼이 표시됩니다
+	var infowindow = new kakao.maps.InfoWindow({
+		map: this.map, // 인포윈도우가 표시될 지도
+		position : iwPosition, 
+		content : iwContent,
+		removable : iwRemoveable
+	});
+}
+jeju = () => {
+	var container = document.getElementById('myMap'); //지도를 담을 영역의 DOM 레퍼런스
+	var options = { //지도를 생성할 때 필요한 기본 옵션
+			center: new kakao.maps.LatLng(33.405993, 126.387623), //지도의 중심좌표.
+			level: 5 //지도의 레벨(확대, 축소 정도
+		};
+	this.map = new kakao.maps.Map(container, options);
+	// 마커가 표시될 위치입니다 
+	var markerPosition  = new kakao.maps.LatLng(33.405993, 126.387623); 
+		
+	// 마커를 생성합니다
+	var marker = new kakao.maps.Marker({
+			position: markerPosition
+	});
+		marker.setMap(this.map);
+	var iwContent = '<div style="padding:5px;">제주특별자치도 제주시 애월읍 평화로 2072</div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나documentelement가 가능합니다
+		iwPosition = new kakao.maps.LatLng(33.405993, 126.387623), //인포윈도우 표시 위치입니다
+		iwRemoveable = true; // removeable 속성을 ture 로 설정하면 인포윈도우를 닫을 수 있는 x버튼이 표시됩니다
+	var infowindow = new kakao.maps.InfoWindow({
+		map: this.map, // 인포윈도우가 표시될 지도
+		position : iwPosition, 
+		content : iwContent,
+		removable : iwRemoveable
+	});
+}
 				
     render() {
         return (
@@ -462,16 +637,16 @@ gwangyang = () => {
 							<Button className="btn"	size="sm" onClick={this.jeollanamdo} variant="secondary">전남</Button>
 							<Button className="btn"	size="sm" onClick={this.gwangyang} variant="secondary">광양</Button>
 							<h4>충청</h4>
-							<Button className="btn"	size="sm" onClick={this.dobong} variant="secondary">청주</Button>
-							<Button className="btn"	size="sm" onClick={this.gangnam} variant="secondary">충주</Button>
-							<Button className="btn"	size="sm" onClick={this.seobu} variant="secondary">예산</Button>
+							<Button className="btn"	size="sm" onClick={this.chungjoo} variant="secondary">청주</Button>
+							<Button className="btn"	size="sm" onClick={this.choongjoo} variant="secondary">충주</Button>
+							<Button className="btn"	size="sm" onClick={this.yesan} variant="secondary">예산</Button>
 							<h4>경상</h4>
-							<Button className="btn"	size="sm" onClick={this.dobong} variant="secondary">문경</Button>
-							<Button className="btn"	size="sm" onClick={this.gangnam} variant="secondary">포항</Button>
-							<Button className="btn"	size="sm" onClick={this.seobu} variant="secondary">마산</Button>
-							<Button className="btn"	size="sm" onClick={this.gangseo} variant="secondary">강서</Button>
+							<Button className="btn"	size="sm" onClick={this.moonkyung} variant="secondary">문경</Button>
+							<Button className="btn"	size="sm" onClick={this.pohang} variant="secondary">포항</Button>
+							<Button className="btn"	size="sm" onClick={this.masan} variant="secondary">마산</Button>
+						
 							<h4>제주</h4> 
-							<Button className="btn"	size="sm" onClick={this.dobong} variant="secondary">제주</Button>
+							<Button className="btn"	size="sm" onClick={this.jeju} variant="secondary">제주</Button>
 							</div>
 							</Col>
 							<Col xs={12} md={8} style={{padding:"0px 0px 0px 0px"}}>
