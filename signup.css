@@ -34,6 +34,9 @@ body{
   form div{
     margin-bottom:6px;
   }
+  #user_id{
+    padding-top: 20px;
+  }
   .join, #ph{
     font-size:15px;
     padding-left:15px;
