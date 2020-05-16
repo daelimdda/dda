@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 import './mainboard.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Carddda from './card';
-import Bottomdda from './bottom';
-import { Col,Row  } from 'react-bootstrap';
-import { Container } from 'react-bootstrap';
+import './index2.css'
+
 
 
 class MB extends Component {
@@ -20,37 +17,39 @@ class MB extends Component {
 
   render(){
   return (
-    <div>
-     <Container className="MB">
-      <Row >
-        <Col xs={6} md={6}>
-          <div className="name">회원</div>
-          <div className="mblist">
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
-          </div>
-        </Col >
-        <Col xs={6} md={6}>
-          <div className="name">강사</div>
-          <div className="mblist">
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
-          </div>
-        </Col>
-      </Row>
-      
-     </Container>
-
+    <div class="board">
+    <div class="section">
+        <form>
+        <div class="article">
+            <table class="who">
+                <tr><td><div class="p">강사</div></td><td>
+                <div class="more">더보기 ></div></td></tr>
+            </table>
+            <div class="line"></div>
+            <table class="notice">
+                <tr><td>·</td><td>1111</td><td>2020-05-16</td></tr>
+                <tr><td>·</td><td>2222</td><td>2020-04-16</td></tr>
+                <tr><td>·</td><td>3333</td><td>2020-03-16</td></tr>
+                <tr><td>·</td><td>4444</td><td>2020-02-16</td></tr>
+                <tr><td>·</td><td>5555</td><td>2020-01-16</td></tr>
+            </table>
+        </div>
+        <div class="article" id="article2">
+            <table class="who">
+                <tr><td><div class="p">회원</div></td><td>
+                <div class="more">더보기 ></div></td></tr>
+            </table>
+            <div class="line"></div>
+            <table class="notice">
+                <tr><td>·</td><td>1111</td><td>2020-05-16</td></tr>
+                <tr><td>·</td><td>2222</td><td>2020-04-16</td></tr>
+                <tr><td>·</td><td>3333</td><td>2020-03-16</td></tr>
+                <tr><td>·</td><td>4444</td><td>2020-02-16</td></tr>
+                <tr><td>·</td><td>5555</td><td>2020-01-16</td></tr>
+            </table>
+        </div>
+        </form>
+    </div>
     </div>
   );
 }

@@ -1,8 +1,6 @@
 /*global kakao*/
 import React , { Component } from "react";
-import {Container , Col, Row } from 'react-bootstrap';
-import { Button } from 'react-bootstrap';
-import './map.css';
+import './index2.css';
 
 class MapContent extends Component {
 	componentDidMount= () => {
@@ -609,54 +607,63 @@ jeju = () => {
 				
     render() {
         return (
-					<div>
-					<Container className="map">
-					<Row>
-						<Col className="korea1" xs={12} md={4} style={{padding:"0px 0px 0px 0px"}}>
-							<div className="testarea"><h1>전국 시험장 안내</h1></div>
-							<div className="korea">
-							<h4>서울</h4>
-							<Button className="btn"	size="sm" onClick={this.dobong} variant="secondary">도봉</Button>
-							<Button className="btn"	size="sm" onClick={this.gangnam} variant="secondary">강남</Button>
-							<Button className="btn"	size="sm" onClick={this.seobu} variant="secondary">서부</Button>
-							<Button className="btn"	size="sm" onClick={this.gangseo} variant="secondary">강서</Button>
-							<h4>부산</h4>
-							<Button className="btn"	size="sm" onClick={this.busannambu} variant="secondary">부산남부</Button>
-							<Button className="btn"	size="sm" onClick={this.busanbokbu} variant="secondary">부산북부</Button>
-							<h4>경기</h4>
-							<Button className="btn"	size="sm" onClick={this.yongin} variant="secondary">용인</Button>
-							<Button className="btn"	size="sm" onClick={this.ansan} variant="secondary">안산</Button>
-							<Button className="btn"	size="sm" onClick={this.uijeongbu} variant="secondary">의정부</Button>
-							<h4>강원</h4>
-							<Button className="btn"	size="sm" onClick={this.chuncheon} variant="secondary">춘천</Button>
-							<Button className="btn"	size="sm" onClick={this.gangneung} variant="secondary">강릉</Button>
-							<Button className="btn"	size="sm" onClick={this.wonju} variant="secondary">원주</Button>
-							<Button className="btn"	size="sm" onClick={this.taebaek} variant="secondary">태백</Button>
-							<h4>전라</h4>
-							<Button className="btn"	size="sm" onClick={this.jeollabokdo} variant="secondary">전북</Button>
-							<Button className="btn"	size="sm" onClick={this.jeollanamdo} variant="secondary">전남</Button>
-							<Button className="btn"	size="sm" onClick={this.gwangyang} variant="secondary">광양</Button>
-							<h4>충청</h4>
-							<Button className="btn"	size="sm" onClick={this.chungjoo} variant="secondary">청주</Button>
-							<Button className="btn"	size="sm" onClick={this.choongjoo} variant="secondary">충주</Button>
-							<Button className="btn"	size="sm" onClick={this.yesan} variant="secondary">예산</Button>
-							<h4>경상</h4>
-							<Button className="btn"	size="sm" onClick={this.moonkyung} variant="secondary">문경</Button>
-							<Button className="btn"	size="sm" onClick={this.pohang} variant="secondary">포항</Button>
-							<Button className="btn"	size="sm" onClick={this.masan} variant="secondary">마산</Button>
-							<h4>제주</h4> 
-							<Button className="btn"	size="sm" onClick={this.jeju} variant="secondary">제주</Button>
+					<div class="map">
+					<div class="test_site">
+							<h1>전국 시험장 안내</h1>
+							<div class="country">
+									<form><table>
+											<tr><td>서울</td><td>
+											<input class="button" onClick={this.gangnam} type="button" value="강남"/>
+											<input class="button" onClick={this.gangseo} type="button" value="강서"/>
+											<input class="button" onClick={this.dobong} type="button" value="도봉"/>
+											<input class="button" onClick={this.seobu} type="button" value="서부"/>
+											</td><td>인천</td><td>
+											<input class="button" onClick={this.dong} type="button" value="인천"/>
+											</td></tr>
+											<tr><td>부산</td><td>
+											<input class="button" onClick={this.busannambu} id="button" type="button" value="부산남부"/>
+											<input class="button" onClick={this.busanbokbu} id="button" type="button" value="부산북부"/>
+											</td><td>대구</td><td>
+												<input class="button" onClick={this.dobong} type="button" value="대구"/>
+											</td></tr>
+											<tr><td>경기</td><td>
+											<input class="button" onClick={this.yongin} type="button" value="용인"/>
+											<input class="button" onClick={this.ansan} type="button" value="안산"/>
+											<input class="button" onClick={this.uijeongbu} type="button" value="의정부"/>
+											</td><td>대전</td><td>
+											<input class="button" onClick={this.dobong} type="button" value="대전"/>
+											</td></tr>
+											<tr><td>강원</td><td>
+											<input class="button" onClick={this.chuncheon} type="button" value="춘천"/>
+											<input class="button" onClick={this.gangneung} type="button" value="강릉"/>
+											<input class="button" onClick={this.wonju} type="button" value="원주"/>
+											<input class="button" onClick={this.taebaek} type="button" value="태백"/>
+											</td><td>울산</td><td>
+											<input class="button" onClick={this.dobong} type="button" value="울산"/>
+											</td></tr>
+											<tr><td>전라</td><td>
+											<input class="button" onClick={this.jeollabokdo} type="button" value="전북"/>
+											<input class="button" onClick={this.jeollanamdo} type="button" value="전남"/>
+											<input class="button" onClick={this.gwangyang} type="button" value="광양"/>
+											</td><td>제주</td><td>
+											<input class="button" onClick={this.jeju} type="button" value="제주"/>
+											</td></tr>
+											<tr><td>충청</td><td>
+											<input class="button" onClick={this.chungjoo} type="button" value="청주"/>
+											<input class="button" onClick={this.choongjoo} type="button" value="충주"/>
+											<input class="button" onClick={this.yesan} type="button" value="예산"/>
+											</td></tr>
+											<tr><td>경상</td><td>
+											<input class="button" onClick={this.moonkyung} type="button" value="문경"/>
+											<input class="button" onClick={this.pohang} type="button" value="포항"/>
+											<input class="button" onClick={this.masan} type="button" value="마산"/>
+											</td></tr>
+									</table></form>
 							</div>
-							</Col>
-							<Col xs={12} md={8} style={{padding:"0px 0px 0px 0px"}}>
-          		<div id='myMap' style={{ height:'70vh' , width:'100%'}}></div>
-						</Col>
-					</Row>
-					</Container>
 					</div>
-										
+					<div id="myMap"/>
+					</div>
         )
     }
 }
 export default MapContent;
-
