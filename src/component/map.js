@@ -661,7 +661,7 @@ jeju = () => {
 									</table></form>
 							</div>
 					</div>
-					<div id="myMap"/>
+						<div id="myMap"/>
 					</div>
         )
     }

@@ -8,8 +8,8 @@ class Header extends Component{
 
         <div className="top_login">
         <div className="top_login_wrap">
-            <a href="dda/login.html" className="top_login_menu">로그인</a>   | 
-            <a href="dda/signup.html" className="top_login_menu">회원가입</a>
+            <a href="/dda/login.html" className="top_login_menu">로그인</a>   | 
+            <a href="/dda/signup.html" className="top_login_menu">회원가입</a>
         </div>
         </div>
 
