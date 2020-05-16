@@ -188,6 +188,10 @@ td{
 .country td:nth-child(4){
     width: 20%;
 }
+.country input{
+    font-size: 0.9em;
+    line-height: 10pt;
+}
 .button{
     background-color: #f3f3f3;
     color: #838282;
@@ -204,7 +208,7 @@ td{
 #myMap{
     display: inline-block;
     border: 2px solid #f3f3f3;
-    margin: 20px 0px 0px 15px;
+    margin: 15px 0px 0px 15px;
     width: 530px;
     height: 420px;
 }
