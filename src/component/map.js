@@ -32,12 +32,12 @@ class MapContent extends Component {
 dobong = () => {
   var container = document.getElementById('myMap'); //지도를 담을 영역의 DOM 레퍼런스
   var options = { //지도를 생성할 때 필요한 기본 옵션
-      center: new kakao.maps.LatLng(37.658864, 127.058126), //지도의 중심좌표.
+      center: new kakao.maps.LatLng(37.657845, 127.057987), //지도의 중심좌표.
       level: 5 //지도의 레벨(확대, 축소 정도
  	};
   this.map = new kakao.maps.Map(container, options);
   // 마커가 표시될 위치입니다 
-  var markerPosition  = new kakao.maps.LatLng(37.658864, 127.058126); 
+  var markerPosition  = new kakao.maps.LatLng(37.657845, 127.057987); 
     
   // 마커를 생성합니다
   var marker = new kakao.maps.Marker({
@@ -45,7 +45,7 @@ dobong = () => {
   });
 		marker.setMap(this.map);
 	var iwContent = '<div style="padding:5px;">서울 노원구 동일로 1449 도봉운전면허시험장</div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 documentelement가 가능합니다
-   iwPosition = new kakao.maps.LatLng(37.658864, 127.058126), //인포윈도우 표시 위치입니다
+   iwPosition = new kakao.maps.LatLng(37.657845, 127.057987), //인포윈도우 표시 위치입니다
    iwRemoveable = true; // removeable 속성을 ture 로 설정하면 인포윈도우를 닫을 수 있는 x버튼이 표시됩니다
 	var infowindow = new kakao.maps.InfoWindow({
 		map: this.map, // 인포윈도우가 표시될 지도
@@ -107,12 +107,12 @@ gangseo = () => {
 seobu = () => {
 	var container = document.getElementById('myMap'); //지도를 담을 영역의 DOM 레퍼런스
 	var options = { //지도를 생성할 때 필요한 기본 옵션
-			center: new kakao.maps.LatLng(37.581227, 126.881529), //지도의 중심좌표.
+			center: new kakao.maps.LatLng(37.578880, 126.881712), //지도의 중심좌표.
 			level: 5 //지도의 레벨(확대, 축소 정도
 	 };
 	this.map = new kakao.maps.Map(container, options);
 	// 마커가 표시될 위치입니다 
-	var markerPosition  = new kakao.maps.LatLng(37.581227, 126.881529); 
+	var markerPosition  = new kakao.maps.LatLng(37.578880, 126.881712); 
 		
 	// 마커를 생성합니다
 	var marker = new kakao.maps.Marker({
@@ -120,7 +120,7 @@ seobu = () => {
 	});
 		marker.setMap(this.map);
 	var iwContent = '<div style="padding:5px;">서울특별시 마포구 상암동 451-6 서부운전면허시험장</div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나documentelement가 가능합니다
-	 iwPosition = new kakao.maps.LatLng(37.581227, 126.881529), //인포윈도우 표시 위치입니다
+	 iwPosition = new kakao.maps.LatLng(37.578880, 126.881712), //인포윈도우 표시 위치입니다
 	 iwRemoveable = true; // removeable 속성을 ture 로 설정하면 인포윈도우를 닫을 수 있는 x버튼이 표시됩니다
 	var infowindow = new kakao.maps.InfoWindow({
 		map: this.map, // 인포윈도우가 표시될 지도
@@ -604,6 +604,106 @@ jeju = () => {
 		removable : iwRemoveable
 	});
 }
+incheon = () => {
+	var container = document.getElementById('myMap'); //지도를 담을 영역의 DOM 레퍼런스
+	var options = { //지도를 생성할 때 필요한 기본 옵션
+			center: new kakao.maps.LatLng(37.384188, 126.708755), //지도의 중심좌표.
+			level: 5 //지도의 레벨(확대, 축소 정도
+		};
+	this.map = new kakao.maps.Map(container, options);
+	// 마커가 표시될 위치입니다 
+	var markerPosition  = new kakao.maps.LatLng(37.384188, 126.708755); 
+		
+	// 마커를 생성합니다
+	var marker = new kakao.maps.Marker({
+			position: markerPosition
+	});
+		marker.setMap(this.map);
+	var iwContent = '<div style="padding:5px;">인천광역시 남동구 논현고잔동 아암대로 1247</div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나documentelement가 가능합니다
+		iwPosition = new kakao.maps.LatLng(37.384188, 126.708755), //인포윈도우 표시 위치입니다
+		iwRemoveable = true; // removeable 속성을 ture 로 설정하면 인포윈도우를 닫을 수 있는 x버튼이 표시됩니다
+	var infowindow = new kakao.maps.InfoWindow({
+		map: this.map, // 인포윈도우가 표시될 지도
+		position : iwPosition, 
+		content : iwContent,
+		removable : iwRemoveable
+	});
+}
+daegu = () => {
+	var container = document.getElementById('myMap'); //지도를 담을 영역의 DOM 레퍼런스
+	var options = { //지도를 생성할 때 필요한 기본 옵션
+			center: new kakao.maps.LatLng(35.924575, 128.551888), //지도의 중심좌표.
+			level: 5 //지도의 레벨(확대, 축소 정도
+		};
+	this.map = new kakao.maps.Map(container, options);
+	// 마커가 표시될 위치입니다 
+	var markerPosition  = new kakao.maps.LatLng(35.924575, 128.551888); 
+		
+	// 마커를 생성합니다
+	var marker = new kakao.maps.Marker({
+			position: markerPosition
+	});
+		marker.setMap(this.map);
+	var iwContent = '<div style="padding:5px;">대구광역시 북구 태전동 1076-1</div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나documentelement가 가능합니다
+		iwPosition = new kakao.maps.LatLng(35.924575, 128.551888), //인포윈도우 표시 위치입니다
+		iwRemoveable = true; // removeable 속성을 ture 로 설정하면 인포윈도우를 닫을 수 있는 x버튼이 표시됩니다
+	var infowindow = new kakao.maps.InfoWindow({
+		map: this.map, // 인포윈도우가 표시될 지도
+		position : iwPosition, 
+		content : iwContent,
+		removable : iwRemoveable
+	});
+}
+daejeon = () => {
+	var container = document.getElementById('myMap'); //지도를 담을 영역의 DOM 레퍼런스
+	var options = { //지도를 생성할 때 필요한 기본 옵션
+			center: new kakao.maps.LatLng(36.285589, 127.461612), //지도의 중심좌표.
+			level: 5 //지도의 레벨(확대, 축소 정도
+		};
+	this.map = new kakao.maps.Map(container, options);
+	// 마커가 표시될 위치입니다 
+	var markerPosition  = new kakao.maps.LatLng(36.285589, 127.461612); 
+		
+	// 마커를 생성합니다
+	var marker = new kakao.maps.Marker({
+			position: markerPosition
+	});
+		marker.setMap(this.map);
+	var iwContent = '<div style="padding:5px;">대전광역시 동구 대별동 산서로1660번길 90</div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나documentelement가 가능합니다
+		iwPosition = new kakao.maps.LatLng(36.285589, 127.461612), //인포윈도우 표시 위치입니다
+		iwRemoveable = true; // removeable 속성을 ture 로 설정하면 인포윈도우를 닫을 수 있는 x버튼이 표시됩니다
+	var infowindow = new kakao.maps.InfoWindow({
+		map: this.map, // 인포윈도우가 표시될 지도
+		position : iwPosition, 
+		content : iwContent,
+		removable : iwRemoveable
+	});
+}
+ulsan = () => {
+	var container = document.getElementById('myMap'); //지도를 담을 영역의 DOM 레퍼런스
+	var options = { //지도를 생성할 때 필요한 기본 옵션
+			center: new kakao.maps.LatLng(35.576599, 129.099100), //지도의 중심좌표.
+			level: 5 //지도의 레벨(확대, 축소 정도
+		};
+	this.map = new kakao.maps.Map(container, options);
+	// 마커가 표시될 위치입니다 
+	var markerPosition  = new kakao.maps.LatLng(35.576599, 129.099100); 
+		
+	// 마커를 생성합니다
+	var marker = new kakao.maps.Marker({
+			position: markerPosition
+	});
+		marker.setMap(this.map);
+	var iwContent = '<div style="padding:5px;">울산광역시 울주군 상북면 봉화로 342</div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나documentelement가 가능합니다
+		iwPosition = new kakao.maps.LatLng(35.576599, 129.099100), //인포윈도우 표시 위치입니다
+		iwRemoveable = true; // removeable 속성을 ture 로 설정하면 인포윈도우를 닫을 수 있는 x버튼이 표시됩니다
+	var infowindow = new kakao.maps.InfoWindow({
+		map: this.map, // 인포윈도우가 표시될 지도
+		position : iwPosition, 
+		content : iwContent,
+		removable : iwRemoveable
+	});
+}
 				
     render() {
         return (
@@ -618,20 +718,20 @@ jeju = () => {
 											<input class="button" onClick={this.dobong} type="button" value="도봉"/>
 											<input class="button" onClick={this.seobu} type="button" value="서부"/>
 											</td><td>인천</td><td>
-											<input class="button" onClick={this.dong} type="button" value="인천"/>
+											<input class="button" onClick={this.incheon} type="button" value="인천"/>
 											</td></tr>
 											<tr><td>부산</td><td>
 											<input class="button" onClick={this.busannambu} id="button" type="button" value="부산남부"/>
 											<input class="button" onClick={this.busanbokbu} id="button" type="button" value="부산북부"/>
 											</td><td>대구</td><td>
-												<input class="button" onClick={this.dobong} type="button" value="대구"/>
+												<input class="button" onClick={this.daegu} type="button" value="대구"/>
 											</td></tr>
 											<tr><td>경기</td><td>
 											<input class="button" onClick={this.yongin} type="button" value="용인"/>
 											<input class="button" onClick={this.ansan} type="button" value="안산"/>
 											<input class="button" onClick={this.uijeongbu} type="button" value="의정부"/>
 											</td><td>대전</td><td>
-											<input class="button" onClick={this.dobong} type="button" value="대전"/>
+											<input class="button" onClick={this.daejeon} type="button" value="대전"/>
 											</td></tr>
 											<tr><td>강원</td><td>
 											<input class="button" onClick={this.chuncheon} type="button" value="춘천"/>
@@ -639,7 +739,7 @@ jeju = () => {
 											<input class="button" onClick={this.wonju} type="button" value="원주"/>
 											<input class="button" onClick={this.taebaek} type="button" value="태백"/>
 											</td><td>울산</td><td>
-											<input class="button" onClick={this.dobong} type="button" value="울산"/>
+											<input class="button" onClick={this.ulsan} type="button" value="울산"/>
 											</td></tr>
 											<tr><td>전라</td><td>
 											<input class="button" onClick={this.jeollabokdo} type="button" value="전북"/>

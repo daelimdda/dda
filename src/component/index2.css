@@ -129,6 +129,7 @@ td{
     font-weight: bold;
 }
 .more{
+    color: black;
     text-align: right;
     font-size: 12px;
     padding-right: 4px;
@@ -211,6 +212,18 @@ td{
     margin: 15px 0px 0px 15px;
     width: 530px;
     height: 420px;
+}
+.quizimg{
+    display: block;
+    text-align: center;
+    
+    height:500px;
+    border: black 1px solid;
+}
+.quizanswer{
+    display: block;
+    text-align: center;
+    
 }
 .footer{
     border-top: 1.4px solid#bdbdbd;

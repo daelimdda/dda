@@ -41,15 +41,18 @@ class quiz extends Component {
   render() {
     return (
       <>
-      <div>{this.state.result}</div>
-      <div>{this.state.quiz[this.state.time]}</div>
+      
+      <div className="quizimg">{this.state.quiz[this.state.time]}</div>
+      <div className="quizanswer">
       <form onSubmit={this.onSubmitForm}>
         <input type="radio" name="radioGroup" value = "1" onChange={this.onChange}/>1
         <input type="radio" name="radioGroup" value = "2" onChange={this.onChange}/>2
         <input type="radio" name="radioGroup" value = "3" onChange={this.onChange}/>3
         <input type="radio" name="radioGroup"value = "4" onChange={this.onChange}/>4
         <button>확인</button>
+        <div>{this.state.result}</div>
       </form>
+      </div>
       
       </>
     );

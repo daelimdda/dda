@@ -54,19 +54,73 @@ class Road extends Component {
     kakao.maps.event.addListener(rv, 'init', function() {
     
         // 로드뷰에 올릴 마커를 생성합니다.
-       
         var rMarker = new kakao.maps.Marker({
-            position: new kakao.maps.LatLng(37.657892, 127.059338),
+            position: new kakao.maps.LatLng(37.650761, 127.068449),
             map: rv //map 대신 rv(로드뷰 객체)로 설정하면 로드뷰에 올라갑니다.
         });
-        rMarker.setAltitude(1); //마커의 높이를 설정합니다. (단위는 m입니다.)
-        rMarker.setRange(50); //마커가 보일 수 있는 범위를 설정합니다. (단위는 m입니다.)
+        rMarker.setAltitude(2); //마커의 높이를 설정합니다. (단위는 m입니다.)
+        rMarker.setRange(30); //마커가 보일 수 있는 범위를 설정합니다. (단위는 m입니다.)
+    
+        // 로드뷰에 올릴 장소명 인포윈도우를 생성합니다.
+        var rLabel = new kakao.maps.InfoWindow({
+            content: '유턴'
+        });
+        rLabel.setRange(30); //마커가 보일 수 있는 범위를 설정합니다. (단위는 m입니다.)
+        rLabel.open(rv, rMarker);
+
+        var rMarker = new kakao.maps.Marker({
+            position: new kakao.maps.LatLng(37.658680, 127.059526),
+            map: rv //map 대신 rv(로드뷰 객체)로 설정하면 로드뷰에 올라갑니다.
+        });
+        rMarker.setAltitude(2); //마커의 높이를 설정합니다. (단위는 m입니다.)
+        rMarker.setRange(30); //마커가 보일 수 있는 범위를 설정합니다. (단위는 m입니다.)
     
         // 로드뷰에 올릴 장소명 인포윈도우를 생성합니다.
         var rLabel = new kakao.maps.InfoWindow({
             content: '직진'
         });
-        rLabel.setRange(50); //마커가 보일 수 있는 범위를 설정합니다. (단위는 m입니다.)
+        rLabel.setRange(30); //마커가 보일 수 있는 범위를 설정합니다. (단위는 m입니다.)
+        rLabel.open(rv, rMarker);
+        var rMarker = new kakao.maps.Marker({
+            position: new kakao.maps.LatLng(37.657145, 127.066486),
+            map: rv //map 대신 rv(로드뷰 객체)로 설정하면 로드뷰에 올라갑니다.
+        });
+        rMarker.setAltitude(2); //마커의 높이를 설정합니다. (단위는 m입니다.)
+        rMarker.setRange(30); //마커가 보일 수 있는 범위를 설정합니다. (단위는 m입니다.)
+    
+        // 로드뷰에 올릴 장소명 인포윈도우를 생성합니다.
+        var rLabel = new kakao.maps.InfoWindow({
+            content: '직진'
+        });
+        rLabel.setRange(30); //마커가 보일 수 있는 범위를 설정합니다. (단위는 m입니다.)
+        rLabel.open(rv, rMarker); 
+
+        var rMarker = new kakao.maps.Marker({
+            position: new kakao.maps.LatLng(37.660803, 127.058925),
+            map: rv //map 대신 rv(로드뷰 객체)로 설정하면 로드뷰에 올라갑니다.
+        });
+        rMarker.setAltitude(2); //마커의 높이를 설정합니다. (단위는 m입니다.)
+        rMarker.setRange(30); //마커가 보일 수 있는 범위를 설정합니다. (단위는 m입니다.)
+    
+        // 로드뷰에 올릴 장소명 인포윈도우를 생성합니다.
+        var rLabel = new kakao.maps.InfoWindow({
+            content: '우회전'
+        });
+        rLabel.setRange(30); //마커가 보일 수 있는 범위를 설정합니다. (단위는 m입니다.)
+        rLabel.open(rv, rMarker); 
+
+        var rMarker = new kakao.maps.Marker({
+            position: new kakao.maps.LatLng(37.657892, 127.059338),
+            map: rv //map 대신 rv(로드뷰 객체)로 설정하면 로드뷰에 올라갑니다.
+        });
+        rMarker.setAltitude(1); //마커의 높이를 설정합니다. (단위는 m입니다.)
+        rMarker.setRange(30); //마커가 보일 수 있는 범위를 설정합니다. (단위는 m입니다.)
+    
+        // 로드뷰에 올릴 장소명 인포윈도우를 생성합니다.
+        var rLabel = new kakao.maps.InfoWindow({
+            content: '직진'
+        });
+        rLabel.setRange(30); //마커가 보일 수 있는 범위를 설정합니다. (단위는 m입니다.)
         rLabel.open(rv, rMarker); // open시 마커를 넣어주면, 마커의 altitude와 position값을 모두 따라 갑니다.
         //
         var rMarker = new kakao.maps.Marker({
@@ -74,7 +128,7 @@ class Road extends Component {
             map: rv //map 대신 rv(로드뷰 객체)로 설정하면 로드뷰에 올라갑니다.
         });
         rMarker.setAltitude(1); //마커의 높이를 설정합니다. (단위는 m입니다.)
-        rMarker.setRange(50); //마커가 보일 수 있는 범위를 설정합니다. (단위는 m입니다.)
+        rMarker.setRange(30); //마커가 보일 수 있는 범위를 설정합니다. (단위는 m입니다.)
     
         // 로드뷰에 올릴 장소명 인포윈도우를 생성합니다.
         var rLabel = new kakao.maps.InfoWindow({
