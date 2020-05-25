@@ -4,6 +4,7 @@
     font-family: 'Nanum Gothic', sans-serif;
     text-decoration: none;
 }
+
 .top_login_wrap, .nav, .footer_wrap, .flow_test, .section, .map{
     margin: 0 auto;
     width: 1020px;
@@ -12,7 +13,7 @@
 }
 .top_login{
     width: 1920px;
-    background-color: #192e59;
+    background-color: #f9b02b;
     color: #f3f3f3;
 }
 .top_login_wrap{
@@ -22,11 +23,11 @@
     padding-right: 10px;
 }
 .top_login_menu{
-    line-height: 27px;
+    line-height: 5px;
     display: inline-block;
     padding-left: 10px;
     padding-right: 10px;
-    font-size: 0.9em;
+    font-size: 0.8rem;
     text-align: center;
     vertical-align: middle;
     color: #f3f3f3;
@@ -36,7 +37,8 @@
     background-color: #fff;
 }
 .nav img{
-    width: 250px;
+    width: 11rem;
+    height: 5rem;
     position: absolute;
     top: 13px;
     padding: 24px 0 0 0px;
@@ -68,8 +70,8 @@
 }
 .flow_test{
     display: block;
-    height: 190px;
-    margin-top: -100px;
+    height: 220px;
+    margin-top: -110px;
     background-color: #fff;
     text-align: center;
     box-shadow: 1px 0px 8px #333;
@@ -78,7 +80,7 @@
     display: inline-block;
 }
 .flow_menu{
-    margin: 35px 18px;
+    margin: 30px 18px;
     text-align: center;
 }
 .flow_text{

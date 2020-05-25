@@ -12,7 +12,7 @@
 }
 
 .menu {
-  background-color:#35acf6;
+  background-color:#f9b02b;
   height: 3rem;
 }
 .login{
@@ -29,7 +29,7 @@ a:hover{
   text-decoration:none;
 }
 .url{
-  color: #35acf6;
+  color: #f9b02b;
 }
 .url:hover{
   color: rgba(255, 255, 255, 0.85);

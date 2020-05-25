@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './index2.css';
-import logo from '../image/logo.png'
+import logo from '../image/logo_small.png'
 import { Link } from '@version/react-router-v3';
 class Nav extends Component{
     MenuItem = ({active, children, to}) => (
