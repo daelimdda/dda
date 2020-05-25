@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/dda/static/css/main.d654ac27.chunk.css",
-    "main.js": "/dda/static/js/main.e8855594.chunk.js",
-    "main.js.map": "/dda/static/js/main.e8855594.chunk.js.map",
+    "main.css": "/dda/static/css/main.1c4ce1f7.chunk.css",
+    "main.js": "/dda/static/js/main.b0abe9a1.chunk.js",
+    "main.js.map": "/dda/static/js/main.b0abe9a1.chunk.js.map",
     "runtime-main.js": "/dda/static/js/runtime-main.544ccc37.js",
     "runtime-main.js.map": "/dda/static/js/runtime-main.544ccc37.js.map",
     "static/css/2.69121389.chunk.css": "/dda/static/css/2.69121389.chunk.css",
     "static/js/2.eeb8246f.chunk.js": "/dda/static/js/2.eeb8246f.chunk.js",
     "static/js/2.eeb8246f.chunk.js.map": "/dda/static/js/2.eeb8246f.chunk.js.map",
     "index.html": "/dda/index.html",
-    "precache-manifest.606c43bbf2b4139153ce29ce0e7730c5.js": "/dda/precache-manifest.606c43bbf2b4139153ce29ce0e7730c5.js",
+    "precache-manifest.d7e17a57168af0167af24563d0864602.js": "/dda/precache-manifest.d7e17a57168af0167af24563d0864602.js",
     "service-worker.js": "/dda/service-worker.js",
     "static/css/2.69121389.chunk.css.map": "/dda/static/css/2.69121389.chunk.css.map",
-    "static/css/main.d654ac27.chunk.css.map": "/dda/static/css/main.d654ac27.chunk.css.map",
+    "static/css/main.1c4ce1f7.chunk.css.map": "/dda/static/css/main.1c4ce1f7.chunk.css.map",
     "static/js/2.eeb8246f.chunk.js.LICENSE.txt": "/dda/static/js/2.eeb8246f.chunk.js.LICENSE.txt",
     "static/media/1.png": "/dda/static/media/1.d1e14ee1.png",
     "static/media/2.png": "/dda/static/media/2.9705deac.png",
@@ -22,6 +22,7 @@
     "static/media/6.png": "/dda/static/media/6.9949c627.png",
     "static/media/index2.css": "/dda/static/media/banner.a70d1dbe.png",
     "static/media/dobongA.PNG": "/dda/static/media/dobongA.5a64576b.PNG",
+    "static/media/logo_small.png": "/dda/static/media/logo_small.e61025ce.png",
     "static/media/quiz1.PNG": "/dda/static/media/quiz1.90ba1db3.PNG",
     "static/media/quiz2.PNG": "/dda/static/media/quiz2.7dc2299c.PNG",
     "static/media/quiz3.PNG": "/dda/static/media/quiz3.246252d8.PNG",
@@ -31,7 +32,7 @@
     "static/js/runtime-main.544ccc37.js",
     "static/css/2.69121389.chunk.css",
     "static/js/2.eeb8246f.chunk.js",
-    "static/css/main.d654ac27.chunk.css",
-    "static/js/main.e8855594.chunk.js"
+    "static/css/main.1c4ce1f7.chunk.css",
+    "static/js/main.b0abe9a1.chunk.js"
   ]
 }

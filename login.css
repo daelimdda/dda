@@ -19,7 +19,8 @@ body{
     line-height: 240px;
   }
   #header img{
-    width: 370px;
+    width: 200px;
+    height: 200px;
   }
   #user_id{
     margin-bottom:10px;
@@ -32,6 +33,7 @@ body{
     padding-left:15px;
     border:1px solid lightgrey;
   }
+
   #user_pw{
     margin-bottom:30px;
   }
@@ -41,7 +43,7 @@ body{
     margin-bottom:40px;
     border:none;
     color:#fff;
-    background-color: #0e305e;
+    background-color: #f9b02b;
   }
   #btn_join{
     width:250px;
@@ -49,8 +51,8 @@ body{
     margin:0 auto;
     display:block;
     font-size:15px;
-    border:1px solid #0e305e;
-    color:#0e305e;
+    border:1px solid #f9b02b;
+    color:#f9b02b;
     background: #fff;
   }
   p{
