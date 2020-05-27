@@ -168,6 +168,10 @@ td{
     height: 450px;
     line-height: 40px;
 }
+.road{
+    border:none
+
+}
 .country{
     border: 2px solid #f3f3f3;
     height: 355px;
