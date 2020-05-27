@@ -15,10 +15,10 @@ class Nav extends Component{
         <div className="nav">
             <a href="/dda"><img className="logo"src={logo} alt="logo"></img></a>
             <ul>
-                <li><Link to="/dda/quiz">문제풀기</Link></li>
-                <li><Link to="/dda/road">도로주행</Link></li>
-                <li><Link to="/dda/board">게시판</Link></li>
-                <li><a href="https://www.safedriving.or.kr/" target="_blank">시험접수</a></li>
+                <li><Link  className="ani" to="/dda/quiz">문제풀기</Link></li>
+                <li><Link  className="ani" to="/dda/road">도로주행</Link></li>
+                <li><Link  className="ani" to="/dda/board">게시판</Link></li>
+                <li><a className="ani" href="https://www.safedriving.or.kr/" target="_blank">시험접수</a></li>
             </ul>
         </div>
 

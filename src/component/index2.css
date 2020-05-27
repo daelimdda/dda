@@ -12,7 +12,7 @@
     font-size: 15px;
 }
 .top_login{
-    width: 1920px;
+    width: 100%;
     background-color: #f9b02b;
     color: #f3f3f3;
 }
@@ -32,15 +32,19 @@
     vertical-align: middle;
     color: #f3f3f3;
 }
+.top_login_menu:hover{
+    text-decoration: none;
+    color:#fff;
+}
 .nav{
     height: 70px;
     background-color: #fff;
 }
 .nav img{
-    width: 11rem;
+    width: 9rem;
     height: 5rem;
     position: absolute;
-    top: 13px;
+    top: 10px;
     padding: 24px 0 0 0px;
 }
 .nav ul{
@@ -50,15 +54,33 @@
 }
 .nav ul li{
     display: inline-block;
-    line-height: 70px;
+    padding-top: 25px;
     margin: 0 10px;
     list-style: none;
+    
 }
 .nav ul li a{
     position: relative;
     font-size: 16px;
     padding: 0 15px;
     color: #333;
+    text-decoration: none;
+}
+.ani{
+    display: inline-block;
+    color: #f9b02b;
+    text-decoration: none;
+}
+.ani:after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #f9b02b;
+    transition: width .3s;
+}
+.ani:hover:after{
+    width: 100%;
 }
 .main_bg{
     background-image: url("../image/banner.png");
