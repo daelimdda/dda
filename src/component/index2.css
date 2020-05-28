@@ -77,7 +77,7 @@
     width: 0;
     height: 2px;
     background: #f9b02b;
-    transition: width .3s;
+    transition: width .6s;
 }
 .ani:hover:after{
     width: 100%;
@@ -258,4 +258,8 @@ td{
     height: 50px;
     line-height: 50px;
     padding-left: 12px;
+}
+.fl{
+    width: 50%;
+    float: left;
 }
