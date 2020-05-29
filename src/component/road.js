@@ -22,6 +22,11 @@ class road extends Component {
             src:"./road/gangseo.html"
         })
     }
+    gangnamB = () => {
+      this.setState({
+          src:"./road/gangnamB.html"
+      })
+  }
   render() {
     return (
 
@@ -32,7 +37,7 @@ class road extends Component {
                 <h4>강남</h4>
                 <li>
                 <a href="#" onClick={this.gangnam}>A</a>
-                <a href="#" onClick={this.gangnam}>B</a>
+                <a href="#" onClick={this.gangnamB}>B</a>
                 <a href="#" onClick={this.gangnam}>C</a>
                 <a href="#" onClick={this.gangnam}>D</a>
                 </li>
