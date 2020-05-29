@@ -46,10 +46,10 @@
 </head>
 <body>
 <div class="map_wrap">
-    <div id="mapWrapper" style="width:100%;height:500px;float:top">
+    <div id="mapWrapper" style="width:100%;height:50vh;float:top">
         <div id="map" style="width:100%;height:100%"></div> <!-- 지도를 표시할 div 입니다 -->
     </div>
-    <div id="rvWrapper" style="width:100%;height:500px;float:bottom">
+    <div id="rvWrapper" style="width:100%;height:50vh;float:bottom">
         <div id="roadview" style="width:100%;height:100%"></div> <!-- 로드뷰를 표시할 div 입니다 -->
     </div>
 </div>
@@ -113,7 +113,7 @@ MapWalker.prototype.setMap = function(map){
  * 아래부터 실제 지도와 로드뷰 map walker를 생성 및 제어하는 로직
  */
 var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
-    mapCenter = new kakao.maps.LatLng(37.54887584471096,126.81975337787024), // 지도의 가운데 좌표
+    mapCenter = new kakao.maps.LatLng(37.550586,126.821337), // 지도의 가운데 좌표
     mapOption = {
         center: mapCenter, // 지도의 중심좌표
         level: 4 // 지도의 확대 레벨
@@ -165,6 +165,41 @@ kakao.maps.event.addListener(roadview, 'init', function() {
 
     });
 });
+
+var linePath = [
+    new kakao.maps.LatLng(37.549506264071454, 126.81957079702558),
+    new kakao.maps.LatLng(37.55193462544498, 126.81675837921186),
+    new kakao.maps.LatLng(37.55636721333814, 126.81655512894626),
+    new kakao.maps.LatLng(37.556348683098804, 126.81622696811472),
+    new kakao.maps.LatLng(37.55251962066594, 126.81633822246432),
+    new kakao.maps.LatLng(37.552438126101826, 126.81607813453617),
+    new kakao.maps.LatLng(37.55811159239854, 126.80863976413397),
+    new kakao.maps.LatLng(37.55883172504273, 126.8082304805531),
+    new kakao.maps.LatLng(37.56156930300506, 126.80734064088257),
+    new kakao.maps.LatLng(37.56156871143997, 126.80697845856149),
+    new kakao.maps.LatLng(37.55878612347353, 126.80789106269255),
+    new kakao.maps.LatLng(37.55807500193055, 126.80830032620129),
+    new kakao.maps.LatLng(37.551699839757795, 126.81641945140697),
+    new kakao.maps.LatLng(37.55621369265939, 126.81632915655078),
+    new kakao.maps.LatLng(37.55621390384434, 126.81646496527331),
+    new kakao.maps.LatLng(37.55156507754053, 126.81666875009302),
+    new kakao.maps.LatLng(37.55016235943861, 126.818505462406),
+    new kakao.maps.LatLng(37.54929863743244, 126.81931102050076),
+    new kakao.maps.LatLng(37.54942533018707, 126.81967283981304),
+
+]; //코스 좌표 설정하기
+
+// 지도에 표시할 선을 생성합니다
+var polyline = new kakao.maps.Polyline({
+    path: linePath, // 선을 구성하는 좌표배열 입니다
+    strokeWeight: 5, // 선의 두께 입니다
+    strokeColor: 'black', // 선의 색깔입니다
+    strokeOpacity: 0.7, // 선의 불투명도 입니다 1에서 0 사이의 값이며 0에 가까울수록 투명합니다
+    strokeStyle: 'solid' // 선의 스타일입니다
+});
+
+// 지도에 선을 표시합니다 
+polyline.setMap(map);  
 
 </script>
 </body>

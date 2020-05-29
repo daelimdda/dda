@@ -26,7 +26,17 @@ class road extends Component {
       this.setState({
           src:"./road/gangnamB.html"
       })
-  }
+    }
+    gangnamC = () => {
+      this.setState({
+          src:"./road/gangnamC.html"
+      })
+    }
+    gangseoA = () => {
+      this.setState({
+          src:"./road/gangseoA.html"
+      })
+    }
   render() {
     return (
 
@@ -38,13 +48,13 @@ class road extends Component {
                 <li>
                 <a href="#" onClick={this.gangnam}>A</a>
                 <a href="#" onClick={this.gangnamB}>B</a>
-                <a href="#" onClick={this.gangnam}>C</a>
+                <a href="#" onClick={this.gangnamC}>C</a>
                 <a href="#" onClick={this.gangnam}>D</a>
                 </li>
                 
                 <h4>강서</h4>
                 <li>
-                <a href="#" onClick={this.gangseo}>A</a>
+                <a href="#" onClick={this.gangseoA}>A</a>
                 <a href="#" onClick={this.dobong}>B</a>
                 <a href="#" onClick={this.dobong}>C</a>
                 <a href="#" onClick={this.dobong}>D</a>
