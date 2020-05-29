@@ -91,9 +91,9 @@
     background-color: #f3f3f3;
 }
 .flow_test{
+    margin-top: 30px;
     display: block;
     height: 220px;
-    margin-top: -110px;
     background-color: #fff;
     text-align: center;
     box-shadow: 1px 0px 8px #333;
@@ -124,8 +124,11 @@
     width:20px;
     height:25px;
 }
-.board, .map{
+.board{
     margin-top: 30px;
+}
+.map{
+    margin-top:-200px;
 }
 .section{
     display: block;
@@ -260,6 +263,10 @@ td{
     padding-left: 12px;
 }
 .fl{
-    width: 50%;
+    width: 20%;
+    float: left;
+}
+.fl1{
+    width: 80%;
     float: left;
 }

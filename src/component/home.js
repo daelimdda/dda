@@ -12,9 +12,9 @@ class home extends Component {
   <div >
     <div class="main_bg">
     </div>
-    <Fw />
-    <Mb />
     <Map />
+    <Mb />
+    <Fw />
 
   </div>
    

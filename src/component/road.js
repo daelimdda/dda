@@ -31,15 +31,15 @@ class road extends Component {
             <ul className="flul">
                 <h4>강남</h4>
                 <li>
-                <a href="#" onClick={this.dobong}>A</a>
-                <a href="#" onClick={this.dobong}>B</a>
-                <a href="#" onClick={this.dobong}>C</a>
-                <a href="#" onClick={this.dobong}>D</a>
+                <a href="#" onClick={this.gangnam}>A</a>
+                <a href="#" onClick={this.gangnam}>B</a>
+                <a href="#" onClick={this.gangnam}>C</a>
+                <a href="#" onClick={this.gangnam}>D</a>
                 </li>
                 
                 <h4>강서</h4>
                 <li>
-                <a href="#" onClick={this.dobong}>A</a>
+                <a href="#" onClick={this.gangseo}>A</a>
                 <a href="#" onClick={this.dobong}>B</a>
                 <a href="#" onClick={this.dobong}>C</a>
                 <a href="#" onClick={this.dobong}>D</a>
@@ -54,14 +54,6 @@ class road extends Component {
                 </li>
 
                 <h4>서부</h4>
-                <li>
-                <a href="#" onClick={this.dobong}>A</a>
-                <a href="#" onClick={this.dobong}>B</a>
-                <a href="#" onClick={this.dobong}>C</a>
-                <a href="#" onClick={this.dobong}>D</a>
-                </li>
-
-                <h4>도봉</h4>
                 <li>
                 <a href="#" onClick={this.dobong}>A</a>
                 <a href="#" onClick={this.dobong}>B</a>
@@ -256,7 +248,7 @@ class road extends Component {
         </nav>
         </div>
 
-        <div className="fl">
+        <div className="fl1">
           <Iframe url={this.state.src}
           width="100%"
           height="1080px"
