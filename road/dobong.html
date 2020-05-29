@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>동동이를 이용하여 로드뷰와 지도 연동하기</title>
     <style>
-    .map_wrap {overflow:hidden;height:330px}
+    .map_wrap {overflow:hidden;height:100%}
     /* 지도위에 로드뷰의 위치와 각도를 표시하기 위한 map walker 아이콘의 스타일 */
     .MapWalker {position:absolute;margin:-26px 0 0 -51px}
     .MapWalker .figure {position:absolute;width:25px;left:38px;top:-2px;
@@ -46,10 +46,10 @@
 </head>
 <body>
 <div class="map_wrap">
-    <div id="mapWrapper" style="width:50%;height:300px;float:left">
+    <div id="mapWrapper" style="width:100%;height:40vh;float:top">
         <div id="map" style="width:100%;height:100%"></div> <!-- 지도를 표시할 div 입니다 -->
     </div>
-    <div id="rvWrapper" style="width:50%;height:300px;float:left">
+    <div id="rvWrapper" style="width:100%;height:40vh;float:bottom">
         <div id="roadview" style="width:100%;height:100%"></div> <!-- 로드뷰를 표시할 div 입니다 -->
     </div>
 </div>
@@ -113,17 +113,17 @@ MapWalker.prototype.setMap = function(map){
  * 아래부터 실제 지도와 로드뷰 map walker를 생성 및 제어하는 로직
  */
 var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
-    mapCenter = new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 가운데 좌표
+    mapCenter = new kakao.maps.LatLng(37.657845, 127.05971292908332), // 지도의 가운데 좌표
     mapOption = {
         center: mapCenter, // 지도의 중심좌표
-        level: 3 // 지도의 확대 레벨
+        level: 4 // 지도의 확대 레벨
     };
 
 // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
 var map = new kakao.maps.Map(mapContainer, mapOption);
 
 // 로드뷰 도로를 지도위에 올린다.
-map.addOverlayMapTypeId(kakao.maps.MapTypeId.ROADVIEW);
+
 
 var roadviewContainer = document.getElementById('roadview'); // 로드뷰를 표시할 div
 var roadview = new kakao.maps.Roadview(roadviewContainer); // 로드뷰 객체
