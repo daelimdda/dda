@@ -61,14 +61,6 @@ class road extends Component {
                 <a href="#" onClick={this.dobong}>D</a>
                 </li>
 
-                <h4>도봉</h4>
-                <li>
-                <a href="#" onClick={this.dobong}>A</a>
-                <a href="#" onClick={this.dobong}>B</a>
-                <a href="#" onClick={this.dobong}>C</a>
-                <a href="#" onClick={this.dobong}>D</a>
-                </li>
-
                 <h4>부산남부</h4>
                 <li>
                 <a href="#" onClick={this.dobong}>A</a>
@@ -256,10 +248,10 @@ class road extends Component {
         </nav>
         </div>
 
-        <div className="fl">
+        <div className="fl1">
           <Iframe url={this.state.src}
           width="100%"
-          height="1080px"
+          height="850px"
           id="myId"
           className="road"
           display="initial"

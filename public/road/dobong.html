@@ -46,10 +46,10 @@
 </head>
 <body>
 <div class="map_wrap">
-    <div id="mapWrapper" style="width:100%;height:40vh;float:top">
+    <div id="mapWrapper" style="width:100%;height:50vh;float:top">
         <div id="map" style="width:100%;height:100%"></div> <!-- 지도를 표시할 div 입니다 -->
     </div>
-    <div id="rvWrapper" style="width:100%;height:40vh;float:bottom">
+    <div id="rvWrapper" style="width:100%;height:50vh;float:bottom">
         <div id="roadview" style="width:100%;height:100%"></div> <!-- 로드뷰를 표시할 div 입니다 -->
     </div>
 </div>
@@ -165,6 +165,38 @@ kakao.maps.event.addListener(roadview, 'init', function() {
 
     });
 });
+
+var linePath = [
+    new kakao.maps.LatLng(37.657406347957206, 127.05793324118956),
+    new kakao.maps.LatLng(37.65787393092915, 127.05979219415393),
+    new kakao.maps.LatLng(37.66111791946556, 127.05888812733966),
+    new kakao.maps.LatLng(37.66086412505375, 127.06185725622139),
+    new kakao.maps.LatLng(37.66001621358112, 127.06371519570862),
+    new kakao.maps.LatLng(37.65705944343393, 127.06652318834695),
+    new kakao.maps.LatLng(37.65078757272002, 127.06833067924055),
+    new kakao.maps.LatLng(37.650913539233855, 127.06862542159531),
+    new kakao.maps.LatLng(37.65727561502238, 127.06663670894015),
+    new kakao.maps.LatLng(37.66017829208924, 127.06389666564633),
+    new kakao.maps.LatLng(37.6610262302322, 127.06199339083939),
+    new kakao.maps.LatLng(37.66179655174589, 127.05276859493543),
+    new kakao.maps.LatLng(37.66156231189033, 127.05273442885594),
+    new kakao.maps.LatLng(37.66110005221185, 127.05858211266502),
+    new kakao.maps.LatLng(37.65800022303546, 127.05948630759738),
+    new kakao.maps.LatLng(37.657586583203454, 127.05785405149341),
+
+]; //코스 좌표 설정하기
+
+// 지도에 표시할 선을 생성합니다
+var polyline = new kakao.maps.Polyline({
+    path: linePath, // 선을 구성하는 좌표배열 입니다
+    strokeWeight: 5, // 선의 두께 입니다
+    strokeColor: 'black', // 선의 색깔입니다
+    strokeOpacity: 0.7, // 선의 불투명도 입니다 1에서 0 사이의 값이며 0에 가까울수록 투명합니다
+    strokeStyle: 'solid' // 선의 스타일입니다
+});
+
+// 지도에 선을 표시합니다 
+polyline.setMap(map);  
 
 </script>
 </body>
