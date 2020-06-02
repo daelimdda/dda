@@ -113,7 +113,7 @@ MapWalker.prototype.setMap = function(map){
  * 아래부터 실제 지도와 로드뷰 map walker를 생성 및 제어하는 로직
  */
 var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
-    mapCenter = new kakao.maps.LatLng(37.657845, 127.05971292908332), // 지도의 가운데 좌표
+    mapCenter = new kakao.maps.LatLng(37.550586,126.821337), // 지도의 가운데 좌표
     mapOption = {
         center: mapCenter, // 지도의 중심좌표
         level: 4 // 지도의 확대 레벨
@@ -167,22 +167,25 @@ kakao.maps.event.addListener(roadview, 'init', function() {
 });
 
 var linePath = [
-    new kakao.maps.LatLng(37.657406347957206, 127.05793324118956),
-    new kakao.maps.LatLng(37.65787393092915, 127.05979219415393),
-    new kakao.maps.LatLng(37.66111791946556, 127.05888812733966),
-    new kakao.maps.LatLng(37.66086412505375, 127.06185725622139),
-    new kakao.maps.LatLng(37.66001621358112, 127.06371519570862),
-    new kakao.maps.LatLng(37.65705944343393, 127.06652318834695),
-    new kakao.maps.LatLng(37.65078757272002, 127.06833067924055),
-    new kakao.maps.LatLng(37.650913539233855, 127.06862542159531),
-    new kakao.maps.LatLng(37.65727561502238, 127.06663670894015),
-    new kakao.maps.LatLng(37.66017829208924, 127.06389666564633),
-    new kakao.maps.LatLng(37.6610262302322, 127.06199339083939),
-    new kakao.maps.LatLng(37.66179655174589, 127.05276859493543),
-    new kakao.maps.LatLng(37.66156231189033, 127.05273442885594),
-    new kakao.maps.LatLng(37.66110005221185, 127.05858211266502),
-    new kakao.maps.LatLng(37.65800022303546, 127.05948630759738),
-    new kakao.maps.LatLng(37.657586583203454, 127.05785405149341),
+    new kakao.maps.LatLng(37.549506264071454, 126.81957079702558),
+    new kakao.maps.LatLng(37.55193462544498, 126.81675837921186),
+    new kakao.maps.LatLng(37.55636721333814, 126.81655512894626),
+    new kakao.maps.LatLng(37.556348683098804, 126.81622696811472),
+    new kakao.maps.LatLng(37.55251962066594, 126.81633822246432),
+    new kakao.maps.LatLng(37.552438126101826, 126.81607813453617),
+    new kakao.maps.LatLng(37.55811159239854, 126.80863976413397),
+    new kakao.maps.LatLng(37.55883172504273, 126.8082304805531),
+    new kakao.maps.LatLng(37.56156930300506, 126.80734064088257),
+    new kakao.maps.LatLng(37.56156871143997, 126.80697845856149),
+    new kakao.maps.LatLng(37.55878612347353, 126.80789106269255),
+    new kakao.maps.LatLng(37.55807500193055, 126.80830032620129),
+    new kakao.maps.LatLng(37.551699839757795, 126.81641945140697),
+    new kakao.maps.LatLng(37.55621369265939, 126.81632915655078),
+    new kakao.maps.LatLng(37.55621390384434, 126.81646496527331),
+    new kakao.maps.LatLng(37.55156507754053, 126.81666875009302),
+    new kakao.maps.LatLng(37.55016235943861, 126.818505462406),
+    new kakao.maps.LatLng(37.54929863743244, 126.81931102050076),
+    new kakao.maps.LatLng(37.54942533018707, 126.81967283981304),
 
 ]; //코스 좌표 설정하기
 
