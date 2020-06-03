@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import './road.css';
 import './index2.css';
-
 import Iframe from 'react-iframe';
-
+import SideList from './list.js';
 class road extends Component {
   constructor(props) {
     super(props);
@@ -42,225 +41,34 @@ gangnamC = () => {
 
       <div className="roaddiv">
         <div className="submenu" id="daumSubmenu">
-        <nav>
-            <ul className="sublist">
-                <h4>강남</h4>
-                <li>
-                <a href="#" onClick={this.gangnamA}>A</a>
-                <a href="#" onClick={this.gangnamB}>B</a>
-                <a href="#" onClick={this.gangnamC}>C</a>
-                <a href="#" onClick={this.gangnam}>D</a>
-                </li>
-                
-                <h4>강서</h4>
-                <li>
-                <a href="#" onClick={this.gangseoA}>A</a>
-                <a href="#" onClick={this.dobong}>B</a>
-                <a href="#" onClick={this.dobong}>C</a>
-                <a href="#" onClick={this.dobong}>D</a>
-                </li>
-
-                <h4>도봉</h4>
-                <li>
-                <a href="#" onClick={this.dobong}>A</a>
-                <a href="#" onClick={this.dobong}>B</a>
-                <a href="#" onClick={this.dobong}>C</a>
-                <a href="#" onClick={this.dobong}>D</a>
-                </li>
-
-                <h4>서부</h4>
-                <li>
-                <a href="#" onClick={this.dobong}>A</a>
-                <a href="#" onClick={this.dobong}>B</a>
-                <a href="#" onClick={this.dobong}>C</a>
-                <a href="#" onClick={this.dobong}>D</a>
-                </li>
-
-                <h4>부산남부</h4>
-                <li>
-                <a href="#" onClick={this.dobong}>A</a>
-                <a href="#" onClick={this.dobong}>B</a>
-                <a href="#" onClick={this.dobong}>C</a>
-                <a href="#" onClick={this.dobong}>D</a>
-                </li>
-
-                <h4>부산북부</h4>
-                <li>
-                <a href="#" onClick={this.dobong}>A</a>
-                <a href="#" onClick={this.dobong}>B</a>
-                <a href="#" onClick={this.dobong}>C</a>
-                <a href="#" onClick={this.dobong}>D</a>
-                </li>
-
-                <h4>용인</h4>
-                <li>
-                <a href="#" onClick={this.dobong}>A</a>
-                <a href="#" onClick={this.dobong}>B</a>
-                <a href="#" onClick={this.dobong}>C</a>
-                <a href="#" onClick={this.dobong}>D</a>
-                </li>
-
-                <h4>안산</h4>
-                <li>
-                <a href="#" onClick={this.dobong}>A</a>
-                <a href="#" onClick={this.dobong}>B</a>
-                <a href="#" onClick={this.dobong}>C</a>
-                <a href="#" onClick={this.dobong}>D</a>
-                </li>
-
-                <h4>의정부</h4>
-                <li>
-                <a href="#" onClick={this.dobong}>A</a>
-                <a href="#" onClick={this.dobong}>B</a>
-                <a href="#" onClick={this.dobong}>C</a>
-                <a href="#" onClick={this.dobong}>D</a>
-                </li>
-
-                <h4>춘천</h4>
-                <li>
-                <a href="#" onClick={this.dobong}>A</a>
-                <a href="#" onClick={this.dobong}>B</a>
-                <a href="#" onClick={this.dobong}>C</a>
-                <a href="#" onClick={this.dobong}>D</a>
-                </li>
-
-                <h4>강릉</h4>
-                <li>
-                <a href="#" onClick={this.dobong}>A</a>
-                <a href="#" onClick={this.dobong}>B</a>
-                <a href="#" onClick={this.dobong}>C</a>
-                <a href="#" onClick={this.dobong}>D</a>
-                </li>
-
-                <h4>원주</h4>
-                <li>
-                <a href="#" onClick={this.dobong}>A</a>
-                <a href="#" onClick={this.dobong}>B</a>
-                <a href="#" onClick={this.dobong}>C</a>
-                <a href="#" onClick={this.dobong}>D</a>
-                </li>
-
-                <h4>태백</h4>
-                <li>
-                <a href="#" onClick={this.dobong}>A</a>
-                <a href="#" onClick={this.dobong}>B</a>
-                <a href="#" onClick={this.dobong}>C</a>
-                <a href="#" onClick={this.dobong}>D</a>
-                </li>
-
-                <h4>전북</h4>
-                <li>
-                <a href="#" onClick={this.dobong}>A</a>
-                <a href="#" onClick={this.dobong}>B</a>
-                <a href="#" onClick={this.dobong}>C</a>
-                <a href="#" onClick={this.dobong}>D</a>
-                </li>
-
-                <h4>전남</h4>
-                <li>
-                <a href="#" onClick={this.dobong}>A</a>
-                <a href="#" onClick={this.dobong}>B</a>
-                <a href="#" onClick={this.dobong}>C</a>
-                <a href="#" onClick={this.dobong}>D</a>
-                </li>
-
-                <h4>광양</h4>
-                <li>
-                <a href="#" onClick={this.dobong}>A</a>
-                <a href="#" onClick={this.dobong}>B</a>
-                <a href="#" onClick={this.dobong}>C</a>
-                <a href="#" onClick={this.dobong}>D</a>
-                </li>
-
-                <h4>청주</h4>
-                <li>
-                <a href="#" onClick={this.dobong}>A</a>
-                <a href="#" onClick={this.dobong}>B</a>
-                <a href="#" onClick={this.dobong}>C</a>
-                <a href="#" onClick={this.dobong}>D</a>
-                </li>
-
-                <h4>충주</h4>
-                <li>
-                <a href="#" onClick={this.dobong}>A</a>
-                <a href="#" onClick={this.dobong}>B</a>
-                <a href="#" onClick={this.dobong}>C</a>
-                <a href="#" onClick={this.dobong}>D</a>
-                </li>
-
-                <h4>예산</h4>
-                <li>
-                <a href="#" onClick={this.dobong}>A</a>
-                <a href="#" onClick={this.dobong}>B</a>
-                <a href="#" onClick={this.dobong}>C</a>
-                <a href="#" onClick={this.dobong}>D</a>
-                </li>
-
-                <h4>문경</h4>
-                <li>
-                <a href="#" onClick={this.dobong}>A</a>
-                <a href="#" onClick={this.dobong}>B</a>
-                <a href="#" onClick={this.dobong}>C</a>
-                <a href="#" onClick={this.dobong}>D</a>
-                </li>
-
-                <h4>포항</h4>
-                <li>
-                <a href="#" onClick={this.dobong}>A</a>
-                <a href="#" onClick={this.dobong}>B</a>
-                <a href="#" onClick={this.dobong}>C</a>
-                <a href="#" onClick={this.dobong}>D</a>
-                </li>
-
-                <h4>마산</h4>
-                <li>
-                <a href="#" onClick={this.dobong}>A</a>
-                <a href="#" onClick={this.dobong}>B</a>
-                <a href="#" onClick={this.dobong}>C</a>
-                <a href="#" onClick={this.dobong}>D</a>
-                </li>
-
-                <h4>인천</h4>
-                <li>
-                <a href="#" onClick={this.dobong}>A</a>
-                <a href="#" onClick={this.dobong}>B</a>
-                <a href="#" onClick={this.dobong}>C</a>
-                <a href="#" onClick={this.dobong}>D</a>
-                </li>
-
-                <h4>대구</h4>
-                <li>
-                <a href="#" onClick={this.dobong}>A</a>
-                <a href="#" onClick={this.dobong}>B</a>
-                <a href="#" onClick={this.dobong}>C</a>
-                <a href="#" onClick={this.dobong}>D</a>
-                </li>
-
-                <h4>대전</h4>
-                <li>
-                <a href="#" onClick={this.dobong}>A</a>
-                <a href="#" onClick={this.dobong}>B</a>
-                <a href="#" onClick={this.dobong}>C</a>
-                <a href="#" onClick={this.dobong}>D</a>
-                </li>
-
-                <h4>울산</h4>
-                <li>
-                <a href="#" onClick={this.dobong}>A</a>
-                <a href="#" onClick={this.dobong}>B</a>
-                <a href="#" onClick={this.dobong}>C</a>
-                <a href="#" onClick={this.dobong}>D</a>
-                </li>
-
-                <h4>제주</h4>
-                <li>
-                <a href="#" onClick={this.dobong}>A</a>
-                <a href="#" onClick={this.dobong}>B</a>
-                <a href="#" onClick={this.dobong}>C</a>
-                <a href="#" onClick={this.dobong}>D</a>
-                </li>
-            </ul>
-        </nav>
+        <SideList Name= "도봉" btnA={this.dobong} btnB={this.dobong} btnC={this.dobong} btnD={this.dobong}/>
+        <SideList Name= "강남" btnA={this.gangnamA} btnB={this.gangnamB} btnC={this.gangnamC} btnD={this.dobong}/>
+        <SideList Name= "강서" btnA={this.gangseoA} btnB={this.dobong} btnC={this.dobong} btnD={this.dobong}/>
+        <SideList Name= "서부" btnA={this.dobong} btnB={this.dobong} btnC={this.dobong} btnD={this.dobong}/>
+        <SideList Name= "부산북부" btnA={this.dobong} btnB={this.dobong} btnC={this.dobong} btnD={this.dobong}/>
+        <SideList Name= "부산남부" btnA={this.dobong} btnB={this.dobong} btnC={this.dobong} btnD={this.dobong}/>
+        <SideList Name= "용인" btnA={this.dobong} btnB={this.dobong} btnC={this.dobong} btnD={this.dobong}/>
+        <SideList Name= "안산" btnA={this.dobong} btnB={this.dobong} btnC={this.dobong} btnD={this.dobong}/>
+        <SideList Name= "의정부" btnA={this.dobong} btnB={this.dobong} btnC={this.dobong} btnD={this.dobong}/>
+        <SideList Name= "춘천" btnA={this.dobong} btnB={this.dobong} btnC={this.dobong} btnD={this.dobong}/>
+        <SideList Name= "강릉" btnA={this.dobong} btnB={this.dobong} btnC={this.dobong} btnD={this.dobong}/>
+        <SideList Name= "원주" btnA={this.dobong} btnB={this.dobong} btnC={this.dobong} btnD={this.dobong}/>
+        <SideList Name= "태백" btnA={this.dobong} btnB={this.dobong} btnC={this.dobong} btnD={this.dobong}/>
+        <SideList Name= "전북" btnA={this.dobong} btnB={this.dobong} btnC={this.dobong} btnD={this.dobong}/>
+        <SideList Name= "전남" btnA={this.dobong} btnB={this.dobong} btnC={this.dobong} btnD={this.dobong}/>
+        <SideList Name= "광양" btnA={this.dobong} btnB={this.dobong} btnC={this.dobong} btnD={this.dobong}/>
+        <SideList Name= "청주" btnA={this.dobong} btnB={this.dobong} btnC={this.dobong} btnD={this.dobong}/>
+        <SideList Name= "충주" btnA={this.dobong} btnB={this.dobong} btnC={this.dobong} btnD={this.dobong}/>
+        <SideList Name= "예산" btnA={this.dobong} btnB={this.dobong} btnC={this.dobong} btnD={this.dobong}/>
+        <SideList Name= "문경" btnA={this.dobong} btnB={this.dobong} btnC={this.dobong} btnD={this.dobong}/>
+        <SideList Name= "포항" btnA={this.dobong} btnB={this.dobong} btnC={this.dobong} btnD={this.dobong}/>
+        <SideList Name= "마산" btnA={this.dobong} btnB={this.dobong} btnC={this.dobong} btnD={this.dobong}/>
+        <SideList Name= "인천" btnA={this.dobong} btnB={this.dobong} btnC={this.dobong} btnD={this.dobong}/>
+        <SideList Name= "대구" btnA={this.dobong} btnB={this.dobong} btnC={this.dobong} btnD={this.dobong}/>
+        <SideList Name= "대전" btnA={this.dobong} btnB={this.dobong} btnC={this.dobong} btnD={this.dobong}/>
+        <SideList Name= "울산" btnA={this.dobong} btnB={this.dobong} btnC={this.dobong} btnD={this.dobong}/>
+        <SideList Name= "제주" btnA={this.dobong} btnB={this.dobong} btnC={this.dobong} btnD={this.dobong}/>
+  
         </div>
 
         <div className="mapdiv">
