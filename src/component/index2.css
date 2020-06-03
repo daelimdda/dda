@@ -103,8 +103,11 @@
 .flow_menu, .arrow{
     display: inline-block;
 }
+.flow_title{
+    padding: 20px 0 15px 0;
+}
 .flow_menu{
-    margin: 30px 18px;
+    margin: 7px 18px;
     text-align: center;
 }
 .flow_text{
@@ -119,7 +122,7 @@
 .arrow{
     text-align: center;
     vertical-align: top;
-    margin-top: 95px;
+    margin-top: 70px;
 
 }
 .arrow>img{
@@ -200,7 +203,7 @@ td{
 .country{
     border: 2px solid #f3f3f3;
     height: 355px;
-    margin: 0 10px 10px 10px;
+    margin: 0 15px 15px 15px;
     padding: 10px 10px 0 15px;
 }
 .country td:first-child{
@@ -240,8 +243,8 @@ td{
 #myMap{
     display: inline-block;
     border: 2px solid #f3f3f3;
-    margin: 15px 0px 0px 15px;
-    width: 530px;
+    margin: 15px 0px 0px 10px;
+    width: 545px;
     height: 420px;
 }
 .quizimg{
@@ -270,5 +273,9 @@ td{
 .fl1{
     width: 80%;
     float: left;
+}
+.test_place{
+    margin:14px 0;
+    text-align: center;
 }
 

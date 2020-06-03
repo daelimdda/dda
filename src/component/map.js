@@ -709,7 +709,7 @@ ulsan = () => {
         return (
 					<div class="map">
 					<div class="test_site">
-							<h1>전국 시험장 안내</h1>
+							<div class="test_place"><h1>전국 시험장 안내</h1></div>
 							<div class="country">
 									<form><table>
 											<tr><td>서울</td><td>

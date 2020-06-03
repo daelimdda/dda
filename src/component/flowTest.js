@@ -13,7 +13,7 @@ class flowTest extends Component{
     return (
         
       <div class="flow_test">
-    <div><h2>운전면허 취득과정</h2></div>
+      <div class="flow_title"><h3>운전면허 취득과정</h3></div>
       <div class="flow_menu">
           <div class="flow_text">교통안전교육</div>
           <div class="flow_icon"><img src={img1} alt=""/></div>
