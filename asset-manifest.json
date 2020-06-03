@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/dda/static/css/main.28a600e8.chunk.css",
-    "main.js": "/dda/static/js/main.641020aa.chunk.js",
-    "main.js.map": "/dda/static/js/main.641020aa.chunk.js.map",
+    "main.css": "/dda/static/css/main.534710e5.chunk.css",
+    "main.js": "/dda/static/js/main.ca1de468.chunk.js",
+    "main.js.map": "/dda/static/js/main.ca1de468.chunk.js.map",
     "runtime-main.js": "/dda/static/js/runtime-main.544ccc37.js",
     "runtime-main.js.map": "/dda/static/js/runtime-main.544ccc37.js.map",
     "static/css/2.69121389.chunk.css": "/dda/static/css/2.69121389.chunk.css",
-    "static/js/2.84c850e2.chunk.js": "/dda/static/js/2.84c850e2.chunk.js",
-    "static/js/2.84c850e2.chunk.js.map": "/dda/static/js/2.84c850e2.chunk.js.map",
+    "static/js/2.8750708b.chunk.js": "/dda/static/js/2.8750708b.chunk.js",
+    "static/js/2.8750708b.chunk.js.map": "/dda/static/js/2.8750708b.chunk.js.map",
     "index.html": "/dda/index.html",
-    "precache-manifest.eb22c9cfc942636fce080d00834ab67f.js": "/dda/precache-manifest.eb22c9cfc942636fce080d00834ab67f.js",
+    "precache-manifest.11a9c7bfd93c70139c6326e6eaf084f4.js": "/dda/precache-manifest.11a9c7bfd93c70139c6326e6eaf084f4.js",
     "service-worker.js": "/dda/service-worker.js",
     "static/css/2.69121389.chunk.css.map": "/dda/static/css/2.69121389.chunk.css.map",
-    "static/css/main.28a600e8.chunk.css.map": "/dda/static/css/main.28a600e8.chunk.css.map",
-    "static/js/2.84c850e2.chunk.js.LICENSE.txt": "/dda/static/js/2.84c850e2.chunk.js.LICENSE.txt",
+    "static/css/main.534710e5.chunk.css.map": "/dda/static/css/main.534710e5.chunk.css.map",
+    "static/js/2.8750708b.chunk.js.LICENSE.txt": "/dda/static/js/2.8750708b.chunk.js.LICENSE.txt",
     "static/media/1.png": "/dda/static/media/1.d1e14ee1.png",
     "static/media/2.png": "/dda/static/media/2.9705deac.png",
     "static/media/3.png": "/dda/static/media/3.73666eee.png",
@@ -22,16 +22,16 @@
     "static/media/6.png": "/dda/static/media/6.9949c627.png",
     "static/media/index2.css": "/dda/static/media/banner.a70d1dbe.png",
     "static/media/logo_small.png": "/dda/static/media/logo_small.e61025ce.png",
-    "static/media/quiz1.PNG": "/dda/static/media/quiz1.90ba1db3.PNG",
-    "static/media/quiz2.PNG": "/dda/static/media/quiz2.7dc2299c.PNG",
-    "static/media/quiz3.PNG": "/dda/static/media/quiz3.246252d8.PNG",
+    "static/media/main_road.jpg": "/dda/static/media/main_road.c1b567fb.jpg",
+    "static/media/road.jpg": "/dda/static/media/road.9f8c05a3.jpg",
+    "static/media/street.jpg": "/dda/static/media/street.5466e92a.jpg",
     "static/media/App.css": "/dda/static/media/street.bb9972fe.png"
   },
   "entrypoints": [
     "static/js/runtime-main.544ccc37.js",
     "static/css/2.69121389.chunk.css",
-    "static/js/2.84c850e2.chunk.js",
-    "static/css/main.28a600e8.chunk.css",
-    "static/js/main.641020aa.chunk.js"
+    "static/js/2.8750708b.chunk.js",
+    "static/css/main.534710e5.chunk.css",
+    "static/js/main.ca1de468.chunk.js"
   ]
 }

@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "eab4a0dc3bb046dce24c9f0b4964a2ac",
+    "revision": "af63cfb7ac14dc41be837be69012d204",
     "url": "/dda/index.html"
   },
   {
-    "revision": "2ddc49a1c960353f19d0",
+    "revision": "af9d1f65d333fcfcb57f",
     "url": "/dda/static/css/2.69121389.chunk.css"
   },
   {
-    "revision": "b747ebc0363c7077f74d",
-    "url": "/dda/static/css/main.28a600e8.chunk.css"
+    "revision": "1d1968ee3c8942bae1a8",
+    "url": "/dda/static/css/main.534710e5.chunk.css"
   },
   {
-    "revision": "2ddc49a1c960353f19d0",
-    "url": "/dda/static/js/2.84c850e2.chunk.js"
+    "revision": "af9d1f65d333fcfcb57f",
+    "url": "/dda/static/js/2.8750708b.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/dda/static/js/2.84c850e2.chunk.js.LICENSE.txt"
+    "url": "/dda/static/js/2.8750708b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b747ebc0363c7077f74d",
-    "url": "/dda/static/js/main.641020aa.chunk.js"
+    "revision": "1d1968ee3c8942bae1a8",
+    "url": "/dda/static/js/main.ca1de468.chunk.js"
   },
   {
     "revision": "08f059d95c69fb03d364",
@@ -60,16 +60,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dda/static/media/logo_small.e61025ce.png"
   },
   {
-    "revision": "90ba1db3713c9a84c9f2c6b6dd898cba",
-    "url": "/dda/static/media/quiz1.90ba1db3.PNG"
+    "revision": "c1b567fbe7b39b0889681fe96f71f649",
+    "url": "/dda/static/media/main_road.c1b567fb.jpg"
   },
   {
-    "revision": "7dc2299c3d4ca8026220e4cc85f4324f",
-    "url": "/dda/static/media/quiz2.7dc2299c.PNG"
+    "revision": "9f8c05a3a8701f4d4835abfadf378e83",
+    "url": "/dda/static/media/road.9f8c05a3.jpg"
   },
   {
-    "revision": "246252d8dfb6d404b8b68adcf8633599",
-    "url": "/dda/static/media/quiz3.246252d8.PNG"
+    "revision": "5466e92a16ab10dc0f4a91af9bb9c105",
+    "url": "/dda/static/media/street.5466e92a.jpg"
   },
   {
     "revision": "bb9972fee4ced0de6aa7a7ca5bf5eec5",
