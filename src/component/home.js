@@ -4,18 +4,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Fw from './flowTest';
 import Mb from './mainboard';
 import Map from './map';
+import Slideshow from './slideshow.js';
 class home extends Component {
-
+  
   render(){
   return (
     
   <div >
-    <div class="main_bg">
-    </div>
-    <Map />
-    <Mb />
+    <Slideshow className="SS"/>
     <Fw />
-
+    <Mb />
+    <Map />
   </div>
    
   );

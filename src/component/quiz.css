@@ -1,0 +1,12 @@
+.quizdiv{
+  width: 1020px;
+  margin: 50px auto;
+  padding: 10px;
+  border: 1px black solid;
+}
+.quizexam{
+  margin-top: 10px;
+}
+h1,h3,h5{
+  display: inline;
+}

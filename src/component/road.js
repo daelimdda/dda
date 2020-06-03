@@ -17,36 +17,36 @@ class road extends Component {
             src:"./road/dobong.html"
         })
     }
-    gangseo = () => {
-        this.setState({
-            src:"./road/gangseo.html"
-        })
-    }
-    gangnamB = () => {
-      this.setState({
-          src:"./road/gangnamB.html"
-      })
-    }
-    gangnamC = () => {
-      this.setState({
-          src:"./road/gangnamC.html"
-      })
-    }
     gangseoA = () => {
-      this.setState({
-          src:"./road/gangseoA.html"
-      })
+        this.setState({
+            src:"./road/gangseoA.html"
+        }) 
     }
+    gangnamA = () => {
+      this.setState({
+          src:"./road/gangnamA.html"
+      })
+  }
+  gangnamB = () => {
+    this.setState({
+        src:"./road/gangnamB.html"
+    })
+}
+gangnamC = () => {
+  this.setState({
+      src:"./road/gangnamC.html"
+  })
+}
   render() {
     return (
 
-      <div>
-        <div className="fl">
+      <div className="roaddiv">
+        <div className="submenu" id="daumSubmenu">
         <nav>
-            <ul className="flul">
+            <ul className="sublist">
                 <h4>강남</h4>
                 <li>
-                <a href="#" onClick={this.gangnam}>A</a>
+                <a href="#" onClick={this.gangnamA}>A</a>
                 <a href="#" onClick={this.gangnamB}>B</a>
                 <a href="#" onClick={this.gangnamC}>C</a>
                 <a href="#" onClick={this.gangnam}>D</a>
@@ -263,10 +263,10 @@ class road extends Component {
         </nav>
         </div>
 
-        <div className="fl1">
+        <div className="mapdiv">
           <Iframe url={this.state.src}
           width="100%"
-          height="850px"
+          height="870px"
           id="myId"
           className="road"
           display="initial"

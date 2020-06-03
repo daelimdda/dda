@@ -91,7 +91,9 @@
     background-color: #f3f3f3;
 }
 .flow_test{
-    margin-top: 30px;
+    position: relative;
+    z-index: 2;
+    margin-top: -100px;
     display: block;
     height: 220px;
     background-color: #fff;
@@ -126,9 +128,6 @@
 }
 .board{
     margin-top: 30px;
-}
-.map{
-    margin-top:-200px;
 }
 .section{
     display: block;
@@ -186,6 +185,7 @@ td{
     display: flex;
     background-color: #e4e4e4;
     margin-bottom: 25px;
+    margin-top: 20px;
 }
 .test_site{
     display: inline-block;

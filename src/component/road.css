@@ -1,6 +1,7 @@
 #mapWrapper{
     text-align: center;
 }
+
 nav ul{height:90vh; width:100%;}
 nav ul{overflow:hidden; overflow-y:scroll;}
 
@@ -8,13 +9,26 @@ a{
     color:black;
     padding: 5px;
 }
-.fl{
+.submenu{
+    width: 280px;
+    left: 86px;
+    top: 77px;
+    bottom: 0;
+    overflow: auto;
+    font-size: 12px;
+    background-color: #e8eced;
     width: 20%;
-    height: 800px;
+    height: 870px;
     float: left;
 }
-.fl1{
+.mapdiv{
     width: 80%;
-    height: 800px;
+    height: 870px;
     float: left;
+}
+.roaddiv{
+    margin: 0 auto;
+    width: 1020px;
+    font-family: 'Malgun Gothic', Dotum, sans-serif;
+    font-size: 15px;
 }

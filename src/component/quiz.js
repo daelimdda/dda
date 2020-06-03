@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import './quiz.css';
 class quiz extends Component {
   state = {
     word : '이주상',
@@ -7,10 +7,14 @@ class quiz extends Component {
     time:0,
     result : '',
     answer: ['1','4','4'],
-    quiz:[<img src={require("../image/quiz1.PNG")}/>,
-    <img src={require("../image/quiz2.PNG")}/>,
-    <img src={require("../image/quiz3.PNG")}/>
-    ]
+    bogi:[["2년","3년","4년","5년"],
+          ["운전면허를 받은 사람 중 교육을 받으려는 날에 65세 이상인 사람","운전면허효력 정지처분을 받고 그 정지기간이 끝나지 아니한 초보운전자로서 특별교통안전      의무교육을 받은 사람","교통법규 위반 등으로 인하여 운전면허효력 정지처분을 받을 가능성이 있는 사람","적성검사를 받지 않아 운전면허가 취소된 사람"],
+          ["15세","16세","17세","18세"],[]
+         ],
+    quiz:["도로교통법상 초보운전자의 기준은 처음 운전면허를 받은 날부터 얼마가 경과되지 아니한 사람을 말하는가?",
+          "다음 중 특별교통안전 권장교육 대상자로 아닌 사람은?",
+          "도로교통법상 제2종 소형면허를 취득할 수 있는 연령 기준으로 맞는 것은? ",""
+         ]
   };
 
   onSubmitForm= (e) =>{
@@ -40,21 +44,20 @@ class quiz extends Component {
  
   render() {
     return (
-      <>
+      <div>
       
-      <div className="quizimg">{this.state.quiz[this.state.time]}</div>
-      <div className="quizanswer">
-      <form onSubmit={this.onSubmitForm}>
-        <input type="radio" name="radioGroup" value = "1" onChange={this.onChange}/>1
-        <input type="radio" name="radioGroup" value = "2" onChange={this.onChange}/>2
-        <input type="radio" name="radioGroup" value = "3" onChange={this.onChange}/>3
-        <input type="radio" name="radioGroup"value = "4" onChange={this.onChange}/>4
-        <button>확인</button>
-        <div>{this.state.result}</div>
-      </form>
+      <div className="quizdiv">
+        <h1>{this.state.time+1}. </h1><h4>{this.state.quiz[this.state.time]}</h4><br/><br/>
+        <form onSubmit={this.onSubmitForm}>
+          <button value = "1" onClick={this.onChange}>1</button><h5>{this.state.bogi[this.state.time][0]}</h5><br/><br/>
+          <button value = "2" onClick={this.onChange}>2</button><h5>{this.state.bogi[this.state.time][1]}</h5><br/><br/>
+          <button value = "3" onClick={this.onChange}>3</button><h5>{this.state.bogi[this.state.time][2]}</h5><br/><br/>
+          <button value = "4" onClick={this.onChange}>4</button><h5>{this.state.bogi[this.state.time][3]}</h5><br/><br/>
+          <br/>{this.state.result}
+        </form>
       </div>
-      
-      </>
+  
+      </div>
     );
   }
 }
