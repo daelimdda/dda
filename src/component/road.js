@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './road.css';
-import './index2.css';
+
 import Iframe from 'react-iframe';
 import SideList from './list.js';
 class road extends Component {
@@ -38,7 +38,7 @@ gangnamC = () => {
 }
   render() {
     return (
-
+      <div className="d2">
       <div className="roaddiv">
         <div className="submenu" id="daumSubmenu">
         <SideList Name= "도봉" btnA={this.dobong} btnB={this.dobong} btnC={this.dobong} btnD={this.dobong}/>
@@ -81,6 +81,7 @@ gangnamC = () => {
           position="relative"
           frameBorder="none"/>
         </div>
+      </div>
       </div>
     );
   }

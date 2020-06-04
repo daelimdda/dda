@@ -11,7 +11,7 @@ class Nav extends Component{
    
     render(){
     return (
-
+        <div className="navrap">
         <div className="nav">
             <a href="/dda"><img className="logo"src={logo} alt="logo"></img></a>
             <ul>
@@ -21,7 +21,8 @@ class Nav extends Component{
                 <li><a className="ani" href="https://www.safedriving.or.kr/" target="_blank">시험접수</a></li>
             </ul>
         </div>
-
+        </div>
+      
     );
     };
 }

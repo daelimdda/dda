@@ -50,10 +50,10 @@ class quiz extends Component {
       <h1>{this.state.time+1}. </h1><h4>{this.state.quiz[this.state.time]}</h4><br/><br/>
         <br/>
         <form onSubmit={this.onSubmitForm}>
-          <button value = "1" onClick={this.onChange}>1</button><h5>{this.state.bogi[this.state.time][0]}</h5><br/><br/>
-          <button value = "2" onClick={this.onChange}>2</button><h5>{this.state.bogi[this.state.time][1]}</h5><br/><br/>
-          <button value = "3" onClick={this.onChange}>3</button><h5>{this.state.bogi[this.state.time][2]}</h5><br/><br/>
-          <button value = "4" onClick={this.onChange}>4</button><h5>{this.state.bogi[this.state.time][3]}</h5><br/><br/>
+          <button className="btnQ" value = "1" onClick={this.onChange}>1</button><h5>{this.state.bogi[this.state.time][0]}</h5><br/><br/>
+          <button className="btnQ" value = "2" onClick={this.onChange}>2</button><h5>{this.state.bogi[this.state.time][1]}</h5><br/><br/>
+          <button className="btnQ" value = "3" onClick={this.onChange}>3</button><h5>{this.state.bogi[this.state.time][2]}</h5><br/><br/>
+          <button className="btnQ" value = "4" onClick={this.onChange}>4</button><h5>{this.state.bogi[this.state.time][3]}</h5><br/><br/>
           <br/>{this.state.result}<br/>
         </form>
       </div>
