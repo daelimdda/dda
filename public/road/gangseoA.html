@@ -113,7 +113,7 @@ MapWalker.prototype.setMap = function(map){
  * 아래부터 실제 지도와 로드뷰 map walker를 생성 및 제어하는 로직
  */
 var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
-    mapCenter = new kakao.maps.LatLng(37.54951522213155,126.81953682615918), // 지도의 가운데 좌표
+    mapCenter = new kakao.maps.LatLng(37.54945234272712,126.81966145832148), // 지도의 가운데 좌표
     mapOption = {
         center: mapCenter, // 지도의 중심좌표
         level: 4 // 지도의 확대 레벨
@@ -138,7 +138,132 @@ var mapWalker = null;
 
 // 로드뷰의 초기화 되었을때 map walker를 생성한다.
 kakao.maps.event.addListener(roadview, 'init', function() {
+        // 로드뷰에 올릴 마커를 생성합니다.
+        var gangseo_M1 = new kakao.maps.Marker({
+        position: new kakao.maps.LatLng(37.54945234272712,126.81966145832148),
+        map: roadview //map 대신 rv(로드뷰 객체)로 설정하면 로드뷰에 올라갑니다.
+    });
 
+    // 로드뷰에 올릴 장소명 인포윈도우를 생성합니다.
+    var gangseo_L1 = new kakao.maps.InfoWindow({
+        position: new kakao.maps.LatLng(37.54945234272712,126.81966145832148),
+        content: '출발'
+    });
+    gangseo_M1.setRange(10);
+    gangseo_L1 .setRange(10);
+    gangseo_L1 .open(roadview, gangseo_M1);
+
+    var gangseo_M2 = new kakao.maps.Marker({
+        position: new kakao.maps.LatLng(37.55179067714304,126.81689453285269),
+        map: roadview //map 대신 rv(로드뷰 객체)로 설정하면 로드뷰에 올라갑니다.
+    });
+
+    // 로드뷰에 올릴 장소명 인포윈도우를 생성합니다.
+    var gangseo_L2 = new kakao.maps.InfoWindow({
+        position: new kakao.maps.LatLng(37.55179067714304,126.81689453285269),
+        content: '우회전'
+    });
+    gangseo_M2.setRange(30);
+    gangseo_L2 .setRange(30);
+    gangseo_L2.open(roadview, gangseo_M2);
+
+    var gangseo_M3 = new kakao.maps.Marker({
+        position: new kakao.maps.LatLng(37.556200274578536,126.81639143537485),
+        map: roadview //map 대신 rv(로드뷰 객체)로 설정하면 로드뷰에 올라갑니다.
+    });
+
+    // 로드뷰에 올릴 장소명 인포윈도우를 생성합니다.
+    var gangseo_L3 = new kakao.maps.InfoWindow({
+        position: new kakao.maps.LatLng(37.556200274578536,126.81639143537485),
+        content: 'U턴'
+    });
+    gangseo_M3.setRange(50);
+    gangseo_L3 .setRange(50);
+    gangseo_L3.open(roadview, gangseo_M3);
+
+    var gangseo_M4 = new kakao.maps.Marker({
+        position: new kakao.maps.LatLng(37.55248366892867,126.81639489505133),
+        map: roadview //map 대신 rv(로드뷰 객체)로 설정하면 로드뷰에 올라갑니다.
+    });
+
+    // 로드뷰에 올릴 장소명 인포윈도우를 생성합니다.
+    var gangseo_L4 = new kakao.maps.InfoWindow({
+        position: new kakao.maps.LatLng(37.55248366892867,126.81639489505133),
+        content: '우회전'
+    });
+    gangseo_M4.setRange(20);
+    gangseo_L4 .setRange(20);
+    gangseo_L4.open(roadview, gangseo_M4);
+
+    var gangseo_M5 = new kakao.maps.Marker({
+        position: new kakao.maps.LatLng(37.56157582487342,126.8071963164492),
+        map: roadview //map 대신 rv(로드뷰 객체)로 설정하면 로드뷰에 올라갑니다.
+    });
+
+    // 로드뷰에 올릴 장소명 인포윈도우를 생성합니다.
+    var gangseo_L5 = new kakao.maps.InfoWindow({
+        position: new kakao.maps.LatLng(37.56157582487342,126.8071963164492),
+        content: 'U턴'
+    });
+    gangseo_M5.setRange(50);
+    gangseo_L5 .setRange(50);
+    gangseo_L5.open(roadview, gangseo_M5);
+
+    var gangseo_M6 = new kakao.maps.Marker({
+        position: new kakao.maps.LatLng(37.55178993911526,126.81641923041114),
+        map: roadview //map 대신 rv(로드뷰 객체)로 설정하면 로드뷰에 올라갑니다.
+    });
+
+    // 로드뷰에 올릴 장소명 인포윈도우를 생성합니다.
+    var gangseo_L6 = new kakao.maps.InfoWindow({
+        position: new kakao.maps.LatLng(37.55178993911526,126.81641923041114),
+        content: '좌회전'
+    });
+    gangseo_M6.setRange(50);
+    gangseo_L6 .setRange(50);
+    gangseo_L6.open(roadview, gangseo_M5);
+
+    var gangseo_M8 = new kakao.maps.Marker({
+        position: new kakao.maps.LatLng(37.55222241601184,126.81641816961746),
+        map: roadview //map 대신 rv(로드뷰 객체)로 설정하면 로드뷰에 올라갑니다.
+    });
+
+    // 로드뷰에 올릴 장소명 인포윈도우를 생성합니다.
+    var gangseo_L8 = new kakao.maps.InfoWindow({
+        position: new kakao.maps.LatLng(37.55222241601184,126.81641816961746),
+        content: '좌회전'
+    });
+    gangseo_M8.setRange(20);
+    gangseo_L8.setRange(20);
+    gangseo_L8.open(roadview, gangseo_M8);
+
+    var gangseo_M9 = new kakao.maps.Marker({
+        position: new kakao.maps.LatLng(37.54930769931874,126.81934494780455),
+        map: roadview //map 대신 rv(로드뷰 객체)로 설정하면 로드뷰에 올라갑니다.
+    });
+
+    // 로드뷰에 올릴 장소명 인포윈도우를 생성합니다.
+    var gangseo_L9 = new kakao.maps.InfoWindow({
+        position: new kakao.maps.LatLng(37.54930769931874,126.81934494780455),
+        content: '우회전'
+    });
+    gangseo_M9.setRange(30);
+    gangseo_L9 .setRange(30);
+    gangseo_L9.open(roadview, gangseo_M9);
+
+
+
+    // 로드뷰 마커가 중앙에 오도록 로드뷰의 viewpoint 조정 합니다.
+    var projection = roadview.getProjection(); // viewpoint(화면좌표)값을 추출할 수 있는 projection 객체를 가져옵니다.
+    
+    // 마커의 position과 altitude값을 통해 viewpoint값(화면좌표)를 추출합니다.
+    var viewpoint = projection.viewpointFromCoords(rMarker.getPosition(), rMarker.getAltitude());
+    roadview.setViewpoint(viewpoint); //로드뷰에 뷰포인트를 설정합니다.
+
+    //각 뷰포인트 값을 초기화를 위해 저장해 놓습니다.
+    rvResetValue.pan = viewpoint.pan;
+    rvResetValue.tilt = viewpoint.tilt;
+    rvResetValue.zoom = viewpoint.zoom;
     // map walker를 생성한다. 생성시 지도의 중심좌표를 넘긴다.
     mapWalker = new MapWalker(mapCenter);
     mapWalker.setMap(map); // map walker를 지도에 설정한다.
