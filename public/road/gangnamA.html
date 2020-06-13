@@ -139,6 +139,8 @@ var mapWalker = null;
 // 로드뷰의 초기화 되었을때 map walker를 생성한다.
 kakao.maps.event.addListener(roadview, 'init', function() {
 
+
+    
     // map walker를 생성한다. 생성시 지도의 중심좌표를 넘긴다.
     mapWalker = new MapWalker(mapCenter);
     mapWalker.setMap(map); // map walker를 지도에 설정한다.

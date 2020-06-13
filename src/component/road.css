@@ -26,6 +26,7 @@ a{
     float: left;
 }
 .mapdiv{
+    box-shadow: 1px 0px 8px black;
     width: 80%;
     height: 870px;
     float: left;
