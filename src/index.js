@@ -8,6 +8,7 @@ import Road from './component/road';
 import home from './component/home';
 import Board from './component/board';
 import NotFound from './component/notfound';
+import BoardWriteForm from './component/BoardWriteForm';
 
 ReactDOM.render(
   
@@ -20,6 +21,7 @@ ReactDOM.render(
     <Route path="/dda/quiz" component={Quiz}/>
     <Route path="/dda/road" component={Road}/>
     <Route path="/dda/board" component={Board}/>
+    <Route path="/dda/BoardWriteForm" component={BoardWriteForm}/>
   </Route>
     <Route component={NotFound} />
   </Router>,
